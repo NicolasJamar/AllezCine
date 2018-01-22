@@ -8,7 +8,5 @@ nav.navbar{
 }
 
 .jumbotron img{
-	/*background-color: rgba(0,0,0,0.7)!important;*/
-	/*z-index: 7;*/
 	filter: brightness(0.30);
 }
