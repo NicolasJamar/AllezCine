@@ -1,0 +1,12 @@
+nav.navbar{
+	background-color: rgba(0,0,0,0.2)!important;
+	float: left;
+	width: 100%;
+	position: absolute;
+	z-index: 6;
+
+}
+
+.jumbotron{
+	/*background-image: url(../img/plats.jpeg)*/
+}
