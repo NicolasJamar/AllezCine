@@ -1,12 +1,14 @@
 nav.navbar{
-	background-color: rgba(0,0,0,0.2)!important;
-	float: left;
+	/*background-color: rgba(0,0,0,0.2)!important;
+	float: left;*/
 	width: 100%;
 	position: absolute;
 	z-index: 6;
 
 }
 
-.jumbotron{
-	/*background-image: url(../img/plats.jpeg)*/
+.jumbotron img{
+	/*background-color: rgba(0,0,0,0.7)!important;*/
+	/*z-index: 7;*/
+	filter: brightness(0.30);
 }
