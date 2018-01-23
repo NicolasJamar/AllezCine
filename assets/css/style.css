@@ -15,12 +15,22 @@ nav.navbar{
 	/*font-family: 'Raleway', sans-serif;*/
 }
 
+.jumbotron .lead{
+	color :rgba(255,255,255, 0.6);
+	font-size: 0.8rem;
+	letter-spacing: 3px;
+}
+
 .carousel-caption{
-	margin-bottom: 8rem;
+	margin-bottom: 9rem;
+}
+
+.carousel-caption a{
+	font-size: 0.7rem;
 }
 
 .carousel-indicators{
-	margin-bottom: 8rem;
+	margin-bottom: 9rem;
 }
 
 
