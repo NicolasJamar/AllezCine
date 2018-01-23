@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 nav.navbar{
 	width: 100%;
 	position: absolute;
@@ -20,4 +21,45 @@ nav.navbar{
 
 .carousel-indicators{
 	margin-bottom: 8rem;
+}
+
+
+main h2{
+	border-left: solid 4px #FE4240; 
+	margin-left: 232px; 
+	border-radius: 1px;
+}
+
+.btn_section{
+				width: 95px;
+				height: 34px;
+				margin-bottom: 30px;
+
+
+
+}
+
+.btn_section:hover{
+	background-color: #FE4240;
+
+}
+
+#first_btn{
+	width: 90px;
+	height: 34px;
+	margin-left: 364px;
+
+}
+
+#last_btn{
+	width: 110px;
+	
+
+}
+
+.first_movies{
+
+	justify-content: center;
+	margin-bottom: 30px;
+
 }
