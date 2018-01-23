@@ -9,3 +9,15 @@ nav.navbar{
 	filter: brightness(0.30);
 	height: 80vh !important;
 }
+
+.jumbotron h2{
+	/*font-family: 'Raleway', sans-serif;*/
+}
+
+.carousel-caption{
+	margin-bottom: 8rem;
+}
+
+.carousel-indicators{
+	margin-bottom: 8rem;
+}
