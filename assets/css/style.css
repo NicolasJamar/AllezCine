@@ -1,6 +1,4 @@
 nav.navbar{
-	/*background-color: rgba(0,0,0,0.2)!important;
-	float: left;*/
 	width: 100%;
 	position: absolute;
 	z-index: 6;
@@ -9,4 +7,6 @@ nav.navbar{
 
 .jumbotron img{
 	filter: brightness(0.30);
+	height: 80vh !important;
+	
 }
