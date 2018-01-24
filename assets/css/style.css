@@ -1,4 +1,17 @@
 
+/*HEADER*/
+.jumbotron{
+	text-transform: uppercase;
+}
+
+.jumbotron .dropdown-menu{
+	text-transform: capitalize;;
+}
+
+.jumbotron #btnGroupDrop1{
+	text-transform: uppercase;
+}
+
 nav.navbar{
 	width: 100%;
 	position: absolute;
@@ -12,7 +25,9 @@ nav.navbar{
 }
 
 .jumbotron h2{
-	/*font-family: 'Raleway', sans-serif;*/
+	font-family: 'Muli', sans-serif;
+	font-size : 2.5rem;
+	margin: 1.8rem 2rem;
 }
 
 .jumbotron .lead{
@@ -33,6 +48,24 @@ nav.navbar{
 	margin-bottom: 9rem;
 }
 
+/*input recherche*/
+.input-group{
+	width: 11rem;
+	height: 1.8rem;
+	border : none;
+}
+
+.input-group input[type=text]{
+	border: none;
+	border-radius: 20px;	
+}
+
+.input-group span{
+	border: none;
+	border-radius: 20px;
+}
+
+/*ALIXE*/
 
 main h2{
 	border-left: solid 4px #FE4240; 
