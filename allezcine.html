@@ -8,71 +8,73 @@
 	
 	<script src="https://use.fontawesome.com/098e46151b.js"></script>
 	
-
-<link href="https://fonts.googleapis.com/css?family=Muli:400,900" rel="stylesheet">
-
-
+	<link href="https://fonts.googleapis.com/css?family=Muli:400,900" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/style.css">
-
-
 </head>
 <body>
 	<header>
 		<!-- JUMBOTRON -->
-		<div class="jumbotron jumbotron-fluid p-0">
-			<!-- NAVBAR -->
-			<nav class="navbar navbar-expand-md p-0">
-
-				<h2 class="text-white font-weight-bold"><span class="red text-danger">Allez</span>Cine!</h2>
-
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav">
-						<li class="nav-item active">
-							<span class="red text-danger font-weight-normal">Home</span>
-						</li>
-						<li class="nav-item active">
-						<div class="btn-group" role="group">
-						    <button id="btnGroupDrop1" type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						      Genre<!-- <span class="sr-only">(current)</span> -->
-						    </button>
-						    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-						      <a class="dropdown-item" href="#">Action</a>
-						      <a class="dropdown-item" href="#">Comedy</a>
-						      <a class="dropdown-item" href="#">Western</a>
-						      <a class="dropdown-item" href="#">Fiction</a>
-
-						    </div>
-						 </div>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link text-dark" href="menu.html">First Movies</a>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link text-dark" href="photo.html">Movies</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link text-dark" href="restaurant.html">Series</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link text-dark" href="contact.html">Shop</a>
-						</li>
-						<li class="nav-item active">
-							<span class="red text-white">Contact</span>
-						</li>
-					</ul>
-					<div class="input-group">
-					   <input type="text" class="form-control bg-dark" placeholder="Recherche" aria-label="Recherche" aria-describedby="basic-addon1">
-					  <div class="input-group-append">
-					    <span class="input-group-text bg-dark" id="basic-addon1"><i class="fa fa-search" aria-hidden="true"></i>
-						</span>
-					  </div>
+		<div class="row">
+			<div class="jumbotron jumbotron-fluid p-0">
+				<!-- NAVBAR -->
+				<nav class="navbar navbar-expand-md p-0">
+					<div class="col-lg-2">
+						<h2 class="text-white font-weight-bold"><span class="red text-danger">Allez</span>Cine!</h2>
 					</div>
-				</div>
-			</nav>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="col-lg-10">
+						<div class="row">
+							<div class="col-lg-8">
+								<div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+									<ul class="navbar-nav">
+										<li class="nav-item">
+											<a class="nav-link p-0 homeContact" href="#"><span class="red text-danger font-weight-normal">Home</span></a>
+										</li>
+										<li class="nav-item active hover">
+											<div class="btn-group" role="group">
+												<button id="btnGroupDrop1" type="button" class="dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													Genre<!-- <span class="sr-only">(current)</span> -->
+												</button>
+												<div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+													<a class="dropdown-item" href="#">Action</a>
+													<a class="dropdown-item" href="#">Comedy</a>
+													<a class="dropdown-item" href="#">Western</a>
+													<a class="dropdown-item" href="#">Fiction</a>
+												</div>
+											</div>
+										</li>
+										<li class="nav-item hover">
+											<a class="nav-link text-dark p-0" href="photo.html">Movies</a>
+										</li>
+										<li class="nav-item hover">
+											<a class="nav-link text-dark p-0" href="restaurant.html">Series</a>
+										</li>
+										<li class="nav-item hover">
+											<a class="nav-link text-dark p-0" href="contact.html">Shop</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link p-0 homeContact" href="#"><span class="red text-white">Contact</span></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-lg-2">
+								<div class="input-group">
+									<input type="text" class="form-control bg-dark" placeholder="Recherche" aria-label="Recherche" aria-describedby="basic-addon1">
+									<div class="input-group-append">
+										<span class="input-group-text bg-dark" id="basic-addon1"><i class="fa fa-search" aria-hidden="true"></i>
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
 			<!-- End : NAVBAR -->
 			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 				<ol class="carousel-indicators">

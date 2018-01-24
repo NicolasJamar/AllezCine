@@ -5,18 +5,65 @@
 }
 
 .jumbotron .dropdown-menu{
-	text-transform: capitalize;;
+	text-transform: capitalize;
 }
 
 .jumbotron #btnGroupDrop1{
 	text-transform: uppercase;
 }
 
+/*NAVBAR*/
+
 nav.navbar{
 	width: 100%;
 	position: absolute;
 	z-index: 6;
 
+}
+
+.homeContact{
+	padding: 0.5rem 0.7rem !important;
+}
+
+.navbar .nav-item{
+	font-size: 0.7rem;
+	/*padding: 0.5rem 0.7rem !important;*/
+	margin: 2px;
+	cursor: pointer;
+}
+
+.navbar .hover{
+	/*font-size: 0.7rem;
+	margin: 2px;*/
+	font-weight: bold;
+	
+}
+
+.navbar .hover a{
+	background-color: rgba(255,255,255, 0.2);
+	padding: 0.5rem 0.7rem !important;
+}
+
+.navbar .hover a:hover{
+	background-color: #FE4240;
+	color: #fff !important;
+}
+
+/*bouton Genre*/
+
+#btnGroupDrop1{
+	background-color: #FE4240;
+	color: #fff !important;
+	padding: 0.5rem !important;
+	font-weight: bold;
+	border: none;
+	border-radius: 0 0 0 5px;
+	cursor: pointer;
+}
+
+#btnGroupDrop1:hover{
+	background-color: #FE4240;
+	color: #fff !important;
 }
 
 .jumbotron img{
