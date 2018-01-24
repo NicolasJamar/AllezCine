@@ -18,36 +18,45 @@ nav.navbar{
 	width: 100%;
 	position: absolute;
 	z-index: 6;
+}
 
+.navbar-toggler{
+	background-color: #fff;	
+}
+
+.navbar-toggler-icon{
+	color: #000 !important;
 }
 
 .homeContact{
-	padding: 0.5rem 0.7rem !important;
+	padding: 0.6rem 0.7rem !important;
 }
 
 .navbar .nav-item{
 	font-size: 0.7rem;
-	/*padding: 0.5rem 0.7rem !important;*/
 	margin: 2px;
 	cursor: pointer;
 }
 
 .navbar .hover{
-	/*font-size: 0.7rem;
-	margin: 2px;*/
 	font-weight: bold;
-	
 }
 
 .navbar .hover a{
 	background-color: rgba(255,255,255, 0.2);
-	padding: 0.5rem 0.7rem !important;
+	padding: 0.5rem 0.8rem !important;
 }
 
 .navbar .hover a:hover{
 	background-color: #FE4240;
 	color: #fff !important;
 }
+
+@media(max-width: 999px){
+	.jumbotron h2{
+		margin : 0 !important;
+	}
+} 
 
 /*bouton Genre*/
 
@@ -57,7 +66,7 @@ nav.navbar{
 	padding: 0.5rem !important;
 	font-weight: bold;
 	border: none;
-	border-radius: 0 0 0 5px;
+	border-radius: 0 0 0 4px;
 	cursor: pointer;
 }
 
@@ -74,7 +83,7 @@ nav.navbar{
 .jumbotron h2{
 	font-family: 'Muli', sans-serif;
 	font-size : 2.5rem;
-	margin: 1.8rem 2rem;
+	margin: 1.3rem 2rem;
 }
 
 .jumbotron .lead{
@@ -98,16 +107,22 @@ nav.navbar{
 /*input recherche*/
 .input-group{
 	width: 11rem;
-	height: 1.8rem;
+	height: 1.5rem;
 	border : none;
+	position: absolute;
+	right: 3rem;
 }
 
 .input-group input[type=text]{
+	color: #fff;
+	font-size: 0.8rem;
 	border: none;
-	border-radius: 20px;	
+	border-radius: 20px;
+	background-color :rgba(255,255,255, 0.1);	
 }
 
 .input-group span{
+	background-color :rgba(255,255,255, 0.1);
 	border: none;
 	border-radius: 20px;
 }
