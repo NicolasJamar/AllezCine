@@ -30,17 +30,22 @@ main h2{
 	border-radius: 1px;
 }
 
+
+								/*ALIXE*/
+
+
 .btn_section{
 				width: 95px;
 				height: 34px;
 				margin-bottom: 30px;
-
-
+				margin-top: 30px;
+				border-style: none;
 
 }
 
 .btn_section:hover{
 	background-color: #FE4240;
+	color: white;
 
 }
 
@@ -63,3 +68,41 @@ main h2{
 	margin-bottom: 30px;
 
 }
+
+.card-body {
+
+	background-color: #0D0D0D;
+	color:white;
+}
+/*
+element.style {
+    background-image: url(https://i.ytimg.com/vi/_etwz7NkemE/hqdefault.jpg);
+    height: 370.45px;
+
+}
+
+ object{
+		
+		height: 437px;
+ }
+
+.card-text{
+
+ 	height: 393.45px;
+ }
+
+ .card-img-top shop{
+
+ }*/
+
+ .shop_movies card-img-top{
+
+ 	width: 150px;
+
+ }
+
+ .shop_movies .card-deck .card {
+    width: 120%;
+}
+
+  
