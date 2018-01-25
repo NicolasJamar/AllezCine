@@ -7,6 +7,10 @@
 
 	/*TITRES*/
 
+.jumbotron h1{
+	font-size: 3rem;
+}
+
 .jumbotron h2{
 	font-family: 'Muli', sans-serif;
 	font-size : 2.5rem;
@@ -16,7 +20,7 @@
 .jumbotron .lead{
 	color :rgba(255,255,255, 0.6);
 	font-size: 0.8rem;
-	letter-spacing: 3px;
+	letter-spacing: 2px;
 }
 
 	/*TEXT: Uppercase*/
@@ -129,12 +133,22 @@ nav.navbar{
 }
 
 .carousel-indicators{
-	margin-bottom: 9rem;
+	margin-bottom: 7rem;
+
+}
+
+.carousel-indicators li{
+	background-color: #fff;
+}
+
+.carousel-indicators .active{
+	background-color: #FE4240;
 }
 
 .carousel-item .btn{
 	background-color: #FE4240;
 	color: #fff;
+	margin-top: 0.8rem;
 }
 
 	/*MEDIAQUERIES HEADER*/
