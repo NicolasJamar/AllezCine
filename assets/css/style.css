@@ -155,7 +155,7 @@ nav.navbar{
 
 @media(max-width: 840px){
 	.jumbotron h2{
-		margin : 0 !important;
+		margin : 3px 0 0 0 !important;
 	}
 } 
 
@@ -206,6 +206,8 @@ nav.navbar{
 	font-size: 1rem;
 }
 
+
+
 /*ALIXE*/
 
 main h2{
@@ -214,24 +216,23 @@ main h2{
 	border-radius: 1px;
 }
 
-								/*ALIXE*/
 
+/*SECTION MAIN*/
 
+.featured_movies .container{
+	width: 70%;
+}
 
-							/*SECTION MAIN*/
 
 .btn_section {
-
 	width: 95px;
 	height: 34px;
 	margin-bottom: 30px;
 	margin-top: 30px;
 	border-style: none;
-
 }
 
 .btn_section:hover {
-
 	background-color: #FE4240;
 	color: white;
 }
@@ -255,35 +256,20 @@ main h2{
 }
 
 
-		.vignettes{
-			padding : 0.3rem;
-		}
+.vignettes{
+
+	padding : 0.2rem;
+}
+
+.vignettes img{
+	
+}
 
 
 .card-body {
 	background-color: #0D0D0D;
 	color:white;
 }
-/*
-element.style {
-    background-image: url(https://i.ytimg.com/vi/_etwz7NkemE/hqdefault.jpg);
-    height: 370.45px;
-
-}
-
- object{
-		
-		height: 437px;
- }
-
-.card-text{
-
- 	height: 393.45px;
- }
-
- .card-img-top shop{
-
- }*/
 
  .shop_movies card-img-top{
  	width: 150px;
@@ -294,9 +280,7 @@ element.style {
 }
  
  					
-
-
-  							/*BTN PLUS/MOINS FILM*/
+/*BTN PLUS/MOINS FILM*/
 
  .btnplusmoinsfilm {
 
