@@ -131,7 +131,7 @@ nav.navbar{
 
 main h2{
 	border-left: solid 4px #FE4240; 
-	margin-left: 232px; 
+	/*margin-left: 232px; */
 	border-radius: 1px;
 }
 
@@ -139,35 +139,40 @@ main h2{
 								/*ALIXE*/
 
 
-.btn_section{
-				width: 95px;
-				height: 34px;
-				margin-bottom: 30px;
-				margin-top: 30px;
-				border-style: none;
+							/*SECTION MAIN*/
+
+.btn_section {
+
+	width: 95px;
+	height: 34px;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	border-style: none;
 
 }
 
-.btn_section:hover{
+.btn_section:hover {
+
 	background-color: #FE4240;
 	color: white;
 
 }
 
-#first_btn{
+#first_btn {
+
 	width: 90px;
 	height: 34px;
 	margin-left: 364px;
 
 }
 
-#last_btn{
+#last_btn {
+
 	width: 110px;
 	
-
 }
 
-.first_movies{
+.first_movies {
 
 	justify-content: center;
 	margin-bottom: 30px;
@@ -210,44 +215,199 @@ element.style {
     width: 120%;
 }
  
- 								/*FOOTER*/
+ 					
 
-.generale{
+  							/*BTN PLUS/MOINS FILM*/
 
-background-color: #0D0D0D;
-color: white;
+ .btnplusmoinsfilm {
 
+ 	border: none;
+ 	background-color: #FE4240;
+ 	color:white;
+ 	
+ }
 
+ .container .btnplusmoinsfilm {
+	
+	display: flex !important;
+ 	justify-content: center !important;
+ }
 
+ .images .container {
+
+ 	display: flex;
+ 	
+ }
+
+.main .container {
+
+	flex-wrap: wrap;
+ 	justify-content: space-around;
 }
 
-  #titre .container{
-  	display: flex;
-  	justify-content: space-between;
+
+/*FFFOOOTER*/
+
+footer {
+
+   background-color: #0D0D0D;
+     
+   }
+     
+ .flex1 {
+
+    display: flex;
+      
+   }
+     
+ .colonnes {
+
+ 	 width: 20%;
+     padding: 10px;
+
+      
+   }
+
+     
+  .colonne1 {
+
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+
+
+   }
+
+.footSubscribe {
+
+    font-family: arial;
+    font-size: 16px;
+    font-weight: bold;
+
+     }
+
+ .form-subscribe{
+
+     width: 300px;
+     height: 30px;
+     padding: 2px;
+     padding-left: 5px;
+     margin-right: 3px;
+     box-sizing: border-box;
+     background-color: #ffffff;
+
+
+     }
+
+
+.btn-subscribe {
+
+        background-color: rgb(255, 55, 55);
+        border: none;
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+        border-radius: 0px;
+        height: 25px;
+        cursor: pointer;
   }
 
-  .head #container{
-  	display: flex;
-  	justify-content: center;
-  }
 
-  .main .container{
-  	display: flex;
-  	justify-content: space-between !important;
-  }
+.footTitre, .footTexte, .footConnectUs {
 
-  .deco{
-  	height: 50px;
-  	border-top: solid 1px #101211;
-  	border-bottom: solid 1px #101211;
-  }
+        font-family: arial;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
 
-  .footer .container{
-  	display:flex;
-  	justify-content: center;
-  }
 
-  .footer .icon{
-  	display: flex;
-  	justify-content: center;
-  }
+.footTitre {
+
+        font-size: 14px;
+        color: #bebebe;
+      }
+
+
+.footTexte {
+
+font-size: 12px;
+  color: #4a4a4a;
+      }
+.footLigne {
+
+height: 1px;
+ color: #292929;
+background-color: #292929;
+border: none;
+
+      }
+
+.footBadge {
+
+ background-color: #292929;
+ margin-right: -1px;
+  margin-bottom: 1px;
+  padding: 2px;
+ font-family: arial;
+ font-size: 10px;
+ font-weight: bold;
+ color: #a4a4a4;
+      }
+ .footLatest {
+
+        font-family: arial;
+        font-size: 12px;
+        color: #4a4a4a;
+      }
+.footLatestImg {
+
+        width: 40%;
+    height: auto;
+    vertical-align: middle;
+    float:right; 
+    margin-right: 5px;
+    margin-bottom: -10px;
+
+      }
+
+ .footLogo {
+
+     margin-top: 10px;
+   margin-bottom: 12px;
+   font-family: arial;
+   font-size: 18px;
+   font-weight: bold;
+      }
+ .footAllezImg {
+
+     width: 30%;
+     height: auto;
+      margin-bottom: -3px;
+      }
+.footConnectUs {
+
+        text-align: center;
+        font-size: 16px;
+        color: #a4a4a4;
+      }
+.footRs {
+
+ width: 24px;
+ height: 24px;
+padding-top: 2px;
+display: inline-block;
+ border: 1px solid #a4a4a4;
+ border-radius: 2px;
+ text-align: center;
+color: #a4a4a4;
+
+      }
+
+ .fa, .fa a {
+
+        color: #a4a4a4;
+      }
+
+.red {
+      	color: #FE4240;
+      }
