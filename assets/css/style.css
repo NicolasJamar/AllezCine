@@ -137,7 +137,7 @@ nav.navbar{
 	color: #fff;
 }
 
-	/*MEDIAQUERIES*/
+	/*MEDIAQUERIES HEADER*/
 
 @media(max-width: 840px){
 	.jumbotron h2{
@@ -200,17 +200,14 @@ main h2{
 	border-radius: 1px;
 }
 
-
 								/*ALIXE*/
 
-
 .btn_section{
-				width: 95px;
-				height: 34px;
-				margin-bottom: 30px;
-				margin-top: 30px;
-				border-style: none;
-
+	width: 95px;
+	height: 34px;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	border-style: none;
 }
 
 .btn_section:hover{
@@ -222,25 +219,18 @@ main h2{
 #first_btn{
 	width: 90px;
 	height: 34px;
-	margin-left: 364px;
-
 }
 
 #last_btn{
 	width: 110px;
-	
-
 }
 
 .first_movies{
-
 	justify-content: center;
 	margin-bottom: 30px;
-
 }
 
 .card-body {
-
 	background-color: #0D0D0D;
 	color:white;
 }
