@@ -1,5 +1,25 @@
 
+.red{
+	color: #FE4240;
+}
+
 /*HEADER*/
+
+	/*TITRES*/
+
+.jumbotron h2{
+	font-family: 'Muli', sans-serif;
+	font-size : 2.5rem;
+	margin: 1.3rem 2rem;
+}
+
+.jumbotron .lead{
+	color :rgba(255,255,255, 0.6);
+	font-size: 0.8rem;
+	letter-spacing: 3px;
+}
+
+	/*TEXT: Uppercase*/
 .jumbotron{
 	text-transform: uppercase;
 }
@@ -12,7 +32,7 @@
 	text-transform: uppercase;
 }
 
-/*NAVBAR*/
+	/*NAVBAR*/
 
 nav.navbar{
 	width: 100%;
@@ -52,13 +72,7 @@ nav.navbar{
 	color: #fff !important;
 }
 
-@media(max-width: 840px){
-	.jumbotron h2{
-		margin : 0 !important;
-	}
-} 
-
-/*bouton Genre*/
+	/*BTN: Genre*/
 
 #btnGroupDrop1{
 	background-color: #FE4240;
@@ -75,36 +89,8 @@ nav.navbar{
 	color: #fff !important;
 }
 
-.jumbotron img{
-	filter: brightness(0.30);
-	height: 80vh !important;
-}
+	/*INPUT recherche*/
 
-.jumbotron h2{
-	font-family: 'Muli', sans-serif;
-	font-size : 2.5rem;
-	margin: 1.3rem 2rem;
-}
-
-.jumbotron .lead{
-	color :rgba(255,255,255, 0.6);
-	font-size: 0.8rem;
-	letter-spacing: 3px;
-}
-
-.carousel-caption{
-	margin-bottom: 9rem;
-}
-
-.carousel-caption a{
-	font-size: 0.7rem;
-}
-
-.carousel-indicators{
-	margin-bottom: 9rem;
-}
-
-/*input recherche*/
 .input-group{
 	width: 11rem;
 	height: 1.5rem;
@@ -127,6 +113,85 @@ nav.navbar{
 	border-radius: 20px;
 }
 
+	/*CAROUSEL*/
+
+.jumbotron img{
+	filter: brightness(0.30);
+	height: 80vh !important;
+}
+
+.carousel-caption{
+	margin-bottom: 9rem;
+}
+
+.carousel-caption a{
+	font-size: 0.7rem;
+}
+
+.carousel-indicators{
+	margin-bottom: 9rem;
+}
+
+.carousel-item .btn{
+	background-color: #FE4240;
+	color: #fff;
+}
+
+	/*MEDIAQUERIES HEADER*/
+
+@media(max-width: 840px){
+	.jumbotron h2{
+		margin : 0 !important;
+	}
+} 
+
+	/*REDLINE*/
+
+#redLine{
+	background-color: #FE4240;
+	height: 2.5rem;
+	font-size: 0.8rem;
+}
+
+#redLine button{
+	background-color: #000;
+	text-transform: uppercase;
+	font-size: 0.7rem;
+	border-radius: 0px !important;
+	padding: 0.3rem;
+	margin: 0.4rem 0.1rem 0.3rem 0.1rem;
+}
+
+#redLine .modal-content{
+	border-radius: 0px;
+}
+
+#redLine .modal-header{
+	background-color: rgba(0,0,0, 0.7);
+	border-radius: 0px;
+}
+
+#redLine h5{
+	font-family: 'Muli', sans-serif;
+	font-weight: bold;
+}
+
+#redLine .modal-body a{
+	text-decoration: none;
+	color: #fff;
+	background-color: #FE4240;
+	padding: 2px 50px;
+	margin-left: 8rem;
+}
+
+#redLine .form-check{
+	color: #FE4240;
+}
+
+#redLine input{
+	font-size: 1rem;
+}
+
 /*ALIXE*/
 
 main h2{
@@ -135,8 +200,8 @@ main h2{
 	border-radius: 1px;
 }
 
-
 								/*ALIXE*/
+
 
 
 							/*SECTION MAIN*/
@@ -155,32 +220,33 @@ main h2{
 
 	background-color: #FE4240;
 	color: white;
-
 }
 
 #first_btn {
 
 	width: 90px;
 	height: 34px;
-	margin-left: 364px;
-
 }
 
 #last_btn {
 
 	width: 110px;
-	
+
 }
 
 .first_movies {
 
 	justify-content: center;
 	margin-bottom: 30px;
-
 }
 
-.card-body {
 
+		.vignettes{
+			padding : 0.3rem;
+		}
+
+
+.card-body {
 	background-color: #0D0D0D;
 	color:white;
 }
@@ -206,16 +272,15 @@ element.style {
  }*/
 
  .shop_movies card-img-top{
-
  	width: 150px;
-
- }
+}
 
  .shop_movies .card-deck .card {
     width: 120%;
 }
  
  					
+
 
   							/*BTN PLUS/MOINS FILM*/
 
@@ -243,6 +308,11 @@ element.style {
 
 	flex-wrap: wrap;
  	justify-content: space-around;
+
+.generale{
+background-color: #0D0D0D;
+color: white;
+
 }
 
 
