@@ -1,4 +1,8 @@
 
+.red{
+	color: #FE4240;
+}
+
 /*HEADER*/
 
 	/*TITRES*/
@@ -128,6 +132,11 @@ nav.navbar{
 	margin-bottom: 9rem;
 }
 
+.carousel-item .btn{
+	background-color: #FE4240;
+	color: #fff;
+}
+
 	/*MEDIAQUERIES*/
 
 @media(max-width: 840px){
@@ -139,6 +148,7 @@ nav.navbar{
 	/*REDLINE*/
 
 #redLine{
+	background-color: #FE4240;
 	height: 2.5rem;
 	font-size: 0.8rem;
 }
@@ -150,6 +160,36 @@ nav.navbar{
 	border-radius: 0px !important;
 	padding: 0.3rem;
 	margin: 0.4rem 0.1rem 0.3rem 0.1rem;
+}
+
+#redLine .modal-content{
+	border-radius: 0px;
+}
+
+#redLine .modal-header{
+	background-color: rgba(0,0,0, 0.7);
+	border-radius: 0px;
+}
+
+#redLine h5{
+	font-family: 'Muli', sans-serif;
+	font-weight: bold;
+}
+
+#redLine .modal-body a{
+	text-decoration: none;
+	color: #fff;
+	background-color: #FE4240;
+	padding: 2px 50px;
+	margin-left: 8rem;
+}
+
+#redLine .form-check{
+	color: #FE4240;
+}
+
+#redLine input{
+	font-size: 1rem;
 }
 
 /*ALIXE*/
