@@ -219,9 +219,11 @@ main h2{
 
 /*SECTION MAIN*/
 
-.featured_movies .container{
-	width: 70%;
+.featured .container{
+	width: 75%;
 }
+
+
 
 
 .btn_section {
@@ -271,12 +273,24 @@ main h2{
 	color:white;
 }
 
- .shop_movies card-img-top{
- 	width: 150px;
+/*SHOP MOVIES*/
+
+.shop_movies .col-lg-8{
+	
 }
 
- .shop_movies .card-deck .card {
-    width: 120%;
+.shop_movies .vignettes{
+ 	/*width: 100% !important;*/
+ 	/*padding: 10px;*/
+}
+
+.shop_movies img{
+	/*width: 160px;*/
+}
+
+ .shop_movies .card {
+    width: 100%;
+    /*padding: 2px;*/
 }
  
  					
