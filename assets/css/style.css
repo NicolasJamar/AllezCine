@@ -172,8 +172,13 @@ nav.navbar{
 	text-transform: uppercase;
 	font-size: 0.7rem;
 	border-radius: 0px !important;
+	border: solid 1px black;
 	padding: 0.3rem;
 	margin: 0.4rem 0.1rem 0.3rem 0.1rem;
+}
+
+#redLine button:hover{
+	border: red;
 }
 
 #redLine .modal-content{
@@ -291,6 +296,12 @@ main h2{
  	
  }
 
+ .btnplusmoinsfilm:hover{
+
+	background-color: #0D0D0D;
+	border: solid 1px #0D0D0D ;
+}
+
  .container .btnplusmoinsfilm {
 	
 	display: flex !important;
@@ -322,6 +333,64 @@ color: white;
 	background-color: #FE4240;
 }
 
+.mb-2:hover{
+
+	background-color: #0D0D0D;
+	border: solid 1px #0D0D0D ;
+}
+
+
+								/*BOUTON RESEAUX SOCIAUX*/
+
+.RSS{
+
+	width: 100px;
+	height: 40px;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+
+#facebook{
+	background-color: blue;
+	margin-left: -40px;
+}
+
+#twitter{
+	background-color: lime;
+	margin-left: -40px;
+}
+#google{
+	background-color: red;
+	margin-left: -40px;
+}
+#mystere{
+	background-color: pink;
+	margin-left: -40px;
+}
+
+#facebook:hover{
+	transition:0.5s;
+	margin-left: 0px; 
+}
+#twitter:hover{
+	transition:0.5s;
+	margin-left: 0px; 
+}
+#google:hover{
+	transition:0.5s;
+	margin-left: 0px; 
+}
+#twitter:hover{
+	transition:0.5s;
+	margin-left: 0px; 
+}
+#mystere:hover{
+	transition:0.5s;
+	margin-left: 0px; 
+}
+
+
+
 
 /*FFFOOOTER*/
 
@@ -351,6 +420,7 @@ footer {
     text-align: center !important;
     width: 100%;
     padding: 10px;
+
 
 
    }
@@ -418,6 +488,8 @@ background-color: #292929;
 border: none;
 
       }
+
+
 
 .footBadge {
 
