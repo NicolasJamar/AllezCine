@@ -1,5 +1,29 @@
 
+.red{
+	color: #FE4240;
+}
+
 /*HEADER*/
+
+	/*TITRES*/
+
+.jumbotron h1{
+	font-size: 3rem;
+}
+
+.jumbotron h2{
+	font-family: 'Muli', sans-serif;
+	font-size : 2.5rem;
+	margin: 1.3rem 2rem;
+}
+
+.jumbotron .lead{
+	color :rgba(255,255,255, 0.6);
+	font-size: 0.8rem;
+	letter-spacing: 2px;
+}
+
+	/*TEXT: Uppercase*/
 .jumbotron{
 	text-transform: uppercase;
 }
@@ -12,7 +36,7 @@
 	text-transform: uppercase;
 }
 
-/*NAVBAR*/
+	/*NAVBAR*/
 
 nav.navbar{
 	width: 100%;
@@ -52,13 +76,7 @@ nav.navbar{
 	color: #fff !important;
 }
 
-@media(max-width: 840px){
-	.jumbotron h2{
-		margin : 0 !important;
-	}
-} 
-
-/*bouton Genre*/
+	/*BTN: Genre*/
 
 #btnGroupDrop1{
 	background-color: #FE4240;
@@ -75,36 +93,8 @@ nav.navbar{
 	color: #fff !important;
 }
 
-.jumbotron img{
-	filter: brightness(0.30);
-	height: 80vh !important;
-}
+	/*INPUT recherche*/
 
-.jumbotron h2{
-	font-family: 'Muli', sans-serif;
-	font-size : 2.5rem;
-	margin: 1.3rem 2rem;
-}
-
-.jumbotron .lead{
-	color :rgba(255,255,255, 0.6);
-	font-size: 0.8rem;
-	letter-spacing: 3px;
-}
-
-.carousel-caption{
-	margin-bottom: 9rem;
-}
-
-.carousel-caption a{
-	font-size: 0.7rem;
-}
-
-.carousel-indicators{
-	margin-bottom: 9rem;
-}
-
-/*input recherche*/
 .input-group{
 	width: 11rem;
 	height: 1.5rem;
@@ -127,6 +117,97 @@ nav.navbar{
 	border-radius: 20px;
 }
 
+	/*CAROUSEL*/
+
+.jumbotron img{
+	filter: brightness(0.30);
+	height: 80vh !important;
+}
+
+.carousel-caption{
+	margin-bottom: 9rem;
+}
+
+.carousel-caption a{
+	font-size: 0.7rem;
+}
+
+.carousel-indicators{
+	margin-bottom: 7rem;
+
+}
+
+.carousel-indicators li{
+	background-color: #fff;
+}
+
+.carousel-indicators .active{
+	background-color: #FE4240;
+}
+
+.carousel-item .btn{
+	background-color: #FE4240;
+	color: #fff;
+	margin-top: 0.8rem;
+}
+
+	/*MEDIAQUERIES HEADER*/
+
+@media(max-width: 840px){
+	.jumbotron h2{
+		margin : 3px 0 0 0 !important;
+	}
+} 
+
+	/*REDLINE*/
+
+#redLine{
+	background-color: #FE4240;
+	height: 2.5rem;
+	font-size: 0.8rem;
+}
+
+#redLine button{
+	background-color: #000;
+	text-transform: uppercase;
+	font-size: 0.7rem;
+	border-radius: 0px !important;
+	padding: 0.3rem;
+	margin: 0.4rem 0.1rem 0.3rem 0.1rem;
+}
+
+#redLine .modal-content{
+	border-radius: 0px;
+}
+
+#redLine .modal-header{
+	background-color: rgba(0,0,0, 0.7);
+	border-radius: 0px;
+}
+
+#redLine h5{
+	font-family: 'Muli', sans-serif;
+	font-weight: bold;
+}
+
+#redLine .modal-body a{
+	text-decoration: none;
+	color: #fff;
+	background-color: #FE4240;
+	padding: 2px 50px;
+	margin-left: 8rem;
+}
+
+#redLine .form-check{
+	color: #FE4240;
+}
+
+#redLine input{
+	font-size: 1rem;
+}
+
+
+
 /*ALIXE*/
 
 main h2{
@@ -136,94 +217,77 @@ main h2{
 }
 
 
-								/*ALIXE*/
+/*SECTION MAIN*/
 
+.featured_movies .container{
+	width: 70%;
+}
 
-							/*SECTION MAIN*/
 
 .btn_section {
-
 	width: 95px;
 	height: 34px;
 	margin-bottom: 30px;
 	margin-top: 30px;
 	border-style: none;
-
 }
 
 .btn_section:hover {
-
 	background-color: #FE4240;
 	color: white;
-
 }
 
 #first_btn {
 
 	width: 90px;
 	height: 34px;
-	margin-left: 364px;
-
 }
 
 #last_btn {
 
 	width: 110px;
-	
+
 }
 
 .first_movies {
 
 	justify-content: center;
 	margin-bottom: 30px;
-
 }
 
-.card-body {
 
+.vignettes{
+
+	padding : 0.2rem;
+}
+
+.vignettes img{
+	
+}
+
+
+.card-body {
 	background-color: #0D0D0D;
 	color:white;
 }
-/*
-element.style {
-    background-image: url(https://i.ytimg.com/vi/_etwz7NkemE/hqdefault.jpg);
-    height: 370.45px;
-
-}
-
- object{
-		
-		height: 437px;
- }
-
-.card-text{
-
- 	height: 393.45px;
- }
-
- .card-img-top shop{
-
- }*/
 
  .shop_movies card-img-top{
-
  	width: 150px;
-
- }
+}
 
  .shop_movies .card-deck .card {
     width: 120%;
 }
  
  					
-
-  							/*BTN PLUS/MOINS FILM*/
+/*BTN PLUS/MOINS FILM*/
 
  .btnplusmoinsfilm {
 
  	border: none;
  	background-color: #FE4240;
  	color:white;
+ 	margin: 0 auto;
  	
  }
 
@@ -243,6 +307,19 @@ element.style {
 
 	flex-wrap: wrap;
  	justify-content: space-around;
+}
+.generale{
+background-color: #0D0D0D;
+color: white;
+
+}
+
+
+.mb-2{
+	border-radius: 0;
+	border: solid 1px #FE4240 ;
+	color: white;
+	background-color: #FE4240;
 }
 
 
@@ -271,7 +348,7 @@ footer {
      
   .colonne1 {
 
-    text-align: center;
+    text-align: center !important;
     width: 100%;
     padding: 10px;
 
@@ -390,7 +467,7 @@ border: none;
         font-size: 16px;
         color: #a4a4a4;
       }
-.footRs {
+.footLk {
 
  width: 24px;
  height: 24px;
@@ -408,6 +485,3 @@ color: #a4a4a4;
         color: #a4a4a4;
       }
 
-.red {
-      	color: #FE4240;
-      }
