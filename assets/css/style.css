@@ -288,6 +288,7 @@ main h2{
  	background-color: #FE4240;
  	color:white;
  	margin: 0 auto;
+
  }
 
  .container .btnplusmoinsfilm {
@@ -311,6 +312,14 @@ main h2{
 background-color: #0D0D0D;
 color: white;
 
+}
+
+
+.mb-2{
+	border-radius: 0;
+	border: solid 1px #FE4240 ;
+	color: white;
+	background-color: #FE4240;
 }
 
 
@@ -339,7 +348,7 @@ footer {
      
   .colonne1 {
 
-    text-align: center;
+    text-align: center !important;
     width: 100%;
     padding: 10px;
 
@@ -458,7 +467,7 @@ border: none;
         font-size: 16px;
         color: #a4a4a4;
       }
-.footRs {
+.footLk {
 
  width: 24px;
  height: 24px;
@@ -476,6 +485,3 @@ color: #a4a4a4;
         color: #a4a4a4;
       }
 
-.red {
-      	color: #FE4240;
-      }
