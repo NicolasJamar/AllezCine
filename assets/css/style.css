@@ -228,14 +228,14 @@ main h2{
 	width: 75%;
 }
 
-
-
+.featured .row{
+	margin-bottom: 1rem;
+}
 
 .btn_section {
 	width: 95px;
 	height: 34px;
-	margin-bottom: 30px;
-	margin-top: 30px;
+	margin: 15px 0px 0px 2px;
 	border-style: none;
 }
 
@@ -244,58 +244,46 @@ main h2{
 	color: white;
 }
 
-#first_btn {
-
-	width: 90px;
-	height: 34px;
-}
-
-#last_btn {
-
-	width: 110px;
-
-}
-
 .first_movies {
-
 	justify-content: center;
 	margin-bottom: 30px;
 }
 
-
 .vignettes{
-
 	padding : 0.2rem;
 }
 
+.vignettes .card{
+	border-radius: 0;
+	font-size: 0.8rem;
+}
+
+.vignettes .card h3{
+	font-size: 0.9rem;
+	text-align: center;
+}
+
 .vignettes img{
-	
+	border-radius: 0;
+	margin-bottom: 0.3rem;
 }
 
 
-.card-body {
-	background-color: #0D0D0D;
-	color:white;
-}
+
 
 /*SHOP MOVIES*/
-
-.shop_movies .col-lg-8{
-	
-}
-
-.shop_movies .vignettes{
- 	/*width: 100% !important;*/
- 	/*padding: 10px;*/
-}
 
 .shop_movies img{
 	/*width: 160px;*/
 }
 
  .shop_movies .card {
-    width: 100%;
-    /*padding: 2px;*/
+    width: 100%; 
+}
+
+.card-body {
+	background-color: #0D0D0D;
+	color:white;
 }
  
  					
@@ -468,10 +456,8 @@ color: white;
 /*FFFOOOTER*/
 
 footer {
-
    background-color: #0D0D0D;
-     
-   }
+  }
      
  .flex1 {
 
@@ -521,14 +507,14 @@ footer {
 
 
 .btn-subscribe {
-
         background-color: rgb(255, 55, 55);
         border: none;
         color: white;
         font-size: 14px;
         font-weight: bold;
         border-radius: 0px;
-        height: 25px;
+        height: 30px;
+        line-height: 1;
         cursor: pointer;
   }
 
@@ -612,6 +598,7 @@ border: none;
         font-size: 16px;
         color: #a4a4a4;
       }
+
 .footLk {
 
  width: 24px;
