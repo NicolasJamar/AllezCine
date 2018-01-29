@@ -358,28 +358,32 @@ color: white;
 
 .RSS{
 
-	width: 100px;
+	width: 150px;
 	height: 40px;
 	border-top-right-radius: 20px;
 	border-bottom-right-radius: 20px;
+	
 }
 
 #facebook{
-	background-color: blue;
-	margin-left: -40px;
+	background-color: #3E5F94;
+	margin-left: -110px;
+	margin-bottom: 3px;
 }
 
 #twitter{
-	background-color: lime;
-	margin-left: -40px;
+	background-color: #0F9DF5;
+	margin-left: -110px;
+	margin-bottom: 3px;
 }
 #google{
-	background-color: red;
-	margin-left: -40px;
+	background-color: #E84838;
+	margin-left: -110px;
 }
 #mystere{
-	background-color: pink;
-	margin-left: -40px;
+	background-color: #E24B84;
+	margin-left: -110px;
+	margin-bottom: 3px;
 }
 
 #facebook:hover{
@@ -388,7 +392,9 @@ color: white;
 }
 #twitter:hover{
 	transition:0.5s;
-	margin-left: 0px; 
+	margin-left: 0px;
+	display: flex; 
+	justify-content: center;
 }
 #google:hover{
 	transition:0.5s;
@@ -403,6 +409,59 @@ color: white;
 	margin-left: 0px; 
 }
 
+#twitter img {
+	width: 30px;
+	margin-top: 5px;
+	margin-left:20px;
+	background-color: white;
+	border-radius: 100%;
+
+}
+#facebook img {
+	width: 30px;
+	margin-top: 5px;
+	margin-left:20px;
+	background-color: white;
+	border-radius: 100%;
+
+}
+	#mystere img {
+	width: 30px;
+	margin-top: 5px;
+	margin-left:20px;
+	background-color: white;
+	border-radius: 100%;
+
+}
+	#google img {
+	width: 30px;
+	margin-top: 5px;
+	margin-left:20px;
+	background-color: white;
+	border-radius: 100%;
+}
+
+.RSS a{
+	text-decoration: none;
+	color: white;
+	margin-left: 47px;
+
+
+}
+
+ #facebook a{
+
+	text-decoration: none;
+	color: white;
+	margin-left: 25px !important;
+}
+
+#google a{
+
+	text-decoration: none;
+	color: white;
+	margin-left: 33px !important;
+}
 
 
 
