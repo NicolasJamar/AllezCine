@@ -280,11 +280,14 @@ main h2{
 /*SHOP MOVIES*/
 
 .shop_movies .card{
-    width: 100%;
-	height: 100%;
+    height: 100%;
 	background-color: #E9E9EA;
 	border-bottom: 2px solid #C6C6C6;
 
+}
+
+.shop_movies .vignettes{
+	max-width: 30vh;
 }
 
 .shop_movies img{
