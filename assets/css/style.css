@@ -224,8 +224,8 @@ main h2{
 
 /*SECTION MAIN*/
 
-.featured .container{
-	width: 75%;
+.featured .content{
+	margin: 0 13vw;
 }
 
 .featured .row{
@@ -237,7 +237,7 @@ main h2{
 	height: 34px;
 	margin: 15px 0px 0px 2px;
 	border-style: none;
-	pointer:; cursor;
+	pointer: cursor;
 }
 
 .btn_section:hover {
@@ -272,8 +272,8 @@ main h2{
 .featured .vignettes img{
 	border-radius: 0;
 	margin-bottom: 0.3rem;
-	height: 35vh;
-	max-width: 30vh;
+	height: 30vh;
+	/*min-width: 30vw;*/
 }
 
 
@@ -287,26 +287,26 @@ main h2{
 }
 
 .shop_movies .vignettes{
-	max-width: 30vh;
+	/*max-width: 30vh;*/
 }
 
 .shop_movies img{
 	border-radius: 0;
 	margin: 0 auto 0.3rem;
-	height: 38vh;
-	max-width: 30vh;
+	height: 33vh;
+	/*min-width: 33vw;*/
 
 }
 
 .my-shop-video .card-body {
-	height: 70% !important;
+	height: 35% !important;
 	background-color: #0D0D0D;
 	color:#fff;
 	border-radius: 0;
 }
 
 .my-shop-video{
-	height: 50vh;
+	height: 75vh;
 	padding: 0.3rem;
 }
 
@@ -649,6 +649,4 @@ color: #a4a4a4;
         color: #a4a4a4;
       }
 
-.my-shop-video{
-	height: 90vh !important;
-}
+
