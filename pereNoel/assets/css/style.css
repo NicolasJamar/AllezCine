@@ -1,0 +1,87 @@
+ 
+
+
+
+ header img{
+	height: 500px;
+	width: 100%;
+	margin-top:50px;
+}
+
+.nav-tabs{
+	background-color: black;
+	height: 60px;
+}
+
+#mainNav{
+	background-color: black;
+}
+
+/*body{
+	background-color: #001AA7;
+}*/
+
+.navbar-brand, .nav-link{
+	color: white;
+}
+
+.nav-link:hover{
+	color: #DF192A;
+}
+.navbar-brand:hover{
+	color: #DF192A;
+}
+
+.nav-tabs a{
+	color:white;
+	line-height: 50px;
+	padding: 0;
+
+	
+}
+
+.nav-tabs a:hover{
+	color: #DF192A;
+	text-decoration: none;
+	
+}
+
+.container{
+	display: flex;
+}
+
+button .navbar-toggler{
+	background-color: #FFF;
+}
+
+main{
+	background-color: #8A121C;
+	height: 1500px;
+	padding: 0;
+}
+
+main img{
+	height: 1500px;
+	
+}
+
+main .card{
+	position: absolute;
+	z-index: 5;
+	background-color: white;
+	opacity: 0.75;
+}
+
+.iconfilm{
+	width: 50px;
+	height: 60px;
+}
+
+li{
+	display: flex;
+	justify-content: space-around;
+}
+
+li span{
+font-weight:bold;
+}

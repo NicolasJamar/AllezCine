@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Père Noël</title>
+	<link rel="stylesheet" href="assets/css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<script src="https://use.fontawesome.com/098e46151b.js"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Muli:400,900" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+	 <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg  fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">PAPA NOEL</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">Présentation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#services">Biographie</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Photographies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Goodies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header>
+    <img src="assets/img/abc.jpg">
+    </header>
+<main>
+  <!-- <div class="container goodies">
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-3">Film</div>
+      <div class="col-3">Prix</div>
+      <div class="col-3">Quantité</div>
+      <div class="col-3">Total</div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-3">
+        <img class="iconfilm" src="assets/img/aff_815420131220115902.jpg">
+        <p><span>Le père Noel</span><br>Dans cette comédie française, le Père Noël est un cambrioleur qui vole des bijoux. Un voleur au grand coeur, bien sûr, qui va former un duo avec un garçon rêveur, et se lancer dans une nuit de Noël folle, sur les toits.</p>
+        <span>2014</span>
+      </div>
+      <div>14euros</div>
+      <div>qtité</div>
+      <div>total</div>
+    </div>
+  </div>
+  </div>
+ -->
+ <div id="goodies">
+ <div class="row">
+  <div class="col">Film</div>
+  <div class="col">Résumé</div>
+  <div class="col">Quantité</div>
+  <div class="col">Prix total</div>
+</div>
+<div class="row">
+  <div class="col">matrix</div>
+  <div class="col">
+    <span>Le père Noel</span>
+    <br>
+    Dans cette comédie française, le Père Noël est un cambrioleur qui vole des bijoux. Un voleur au grand coeur, bien sûr, qui va former un duo avec un garçon rêveur, et se lancer dans une nuit de Noël folle, sur les toits.</p>
+    <span>2014</span>
+  </div>
+  <div class="col">Quantité</div>
+  <div class="col">Prix total</div>
+</div>
+<div class="row">
+  <div class="col-1"><img id="icongoodies" src="assets/img/aff_815420131220115902.jpg"></div>
+  <div class="col">
+    <span>Le père Noel</span>
+    <br>
+    Dans cette comédie française, le Père Noël est un cambrioleur qui vole des bijoux. Un voleur au grand coeur, bien sûr, qui va former un duo avec un garçon rêveur, et se lancer dans une nuit de Noël folle, sur les toits.</p>
+    <span>2014</span>
+  </div>
+  <div class="col">Quantité</div>
+  <div class="col">Prix total</div>
+</div>
+<div class="row">
+  <div class="col">matrix</div>
+  <div class="col">
+    <span>Le père Noel</span>
+    <br>
+    Dans cette comédie française, le Père Noël est un cambrioleur qui vole des bijoux. Un voleur au grand coeur, bien sûr, qui va former un duo avec un garçon rêveur, et se lancer dans une nuit de Noël folle, sur les toits.</p>
+    <span>2014</span>
+  </div>
+  <div class="col">Quantité</div>
+  <div class="col">Prix total</div>
+</div>
+<div class="row">
+  <div class="col">matrix</div>
+  <div class="col">
+    <span>Le père Noel</span>
+    <br>
+    Dans cette comédie française, le Père Noël est un cambrioleur qui vole des bijoux. Un voleur au grand coeur, bien sûr, qui va former un duo avec un garçon rêveur, et se lancer dans une nuit de Noël folle, sur les toits.</p>
+    <span>2014</span>
+  </div>
+  <div class="col">Quantité</div>
+  <div class="col">Prix total</div>
+</div>
+<div class="row">
+  <div class="col">matrix</div>
+  <div class="col">
+    <span>Le père Noel</span>
+    <br>
+    Dans cette comédie française, le Père Noël est un cambrioleur qui vole des bijoux. Un voleur au grand coeur, bien sûr, qui va former un duo avec un garçon rêveur, et se lancer dans une nuit de Noël folle, sur les toits.</p>
+    <span>2014</span>
+  </div>
+  <div class="col">Quantité</div>
+  <div class="col">Prix total</div>
+</div>
+
+</div>
+</div>
+
+  
+  <img id="imgimgimg" src="assets/img/4.gif">
+</main>
+                    
+ <!-- Footer -->
+    <footer>
+      gggggggggggggggggggdf
+    </footer>
+  
+  
+
+
+</body>
+</html>
