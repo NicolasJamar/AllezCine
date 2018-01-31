@@ -3,8 +3,10 @@
 $("#btnplusfilm").click(function(event) {
   if ($('#btnplusfilm').html() == "Plus de Films") {
     $('#btnplusfilm').html("Moins de Films");
+    $('.showHide2').removeClass('hidden');
   } else {
     $('#btnplusfilm').html("Plus de Films");
+    $('.showHide2').addClass('hidden');
   }
 });
 $("#btnplusserie").click(function(event) {
@@ -14,6 +16,7 @@ $("#btnplusserie").click(function(event) {
     $('#btnplusserie').html("Plus de Séries");
   }
 });
+
 
 // Bouton Filtre
 var button = document.querySelector('#button-parent');
@@ -26,47 +29,59 @@ for (i=0;i<button.children.length;i++){
 
     $('.btn_section').click(function() {
     if (btnArray[($(this).val())-1] === "All"){
-      if ( $('.vignettes').css("display") == "none"){
-        $('.vignettes').css("display","block");
-    }
+    	$('.vignettes').addClass('hidden');
+    	$('.showHide1').removeClass('hidden');
+    	$('#btnplusfilm').removeClass('hidden');
+    //   if ( $('.vignettes').css("display") == "none"){
+    //     $('.vignettes').css("display","block");
+    //     $('#btnplusfilm').html("Moins de Films");
+    //     $('.showHide').addClass('hidden');
+    // }
   }
-    else if (btnArray[($(this).val())-1] === "Thriller"){
-      $('.vignettes').css("display","block");
+    else 
+    	if (btnArray[($(this).val())-1] === "Thriller"){
+      $('.vignettes').removeClass('hidden');
       if ( $('.vignettes').not(".Thriller")){
-        $('.vignettes').not(".Thriller").css('display','none');
+        $('.vignettes').not(".Thriller").addClass('hidden');
+        $('#btnplusfilm').addClass('hidden');
       }
     }
     else if (btnArray[($(this).val())-1] === "Policiers"){
-      $('.vignettes').css("display","block");
+      $('.vignettes').removeClass('hidden');
       if ( $('.vignettes').not(".Policiers")){
-        $('.vignettes').not(".Policiers").css('display','none');
+        $('.vignettes').not(".Policiers").addClass('hidden');
+        $('#btnplusfilm').addClass('hidden');
       }
     }
     else if (btnArray[($(this).val())-1] === "Comedie"){
-      $('.vignettes').css("display","block");
+      $('.vignettes').removeClass('hidden');
       if ( $('.vignettes').not(".Comedie")){
-        $('.vignettes').not(".Comedie").css('display','none');
+        $('.vignettes').not(".Comedie").addClass('hidden');
+        $('#btnplusfilm').addClass('hidden');
       }
     }
     else if (btnArray[($(this).val())-1] === "Scifi"){
-      $('.vignettes').css("display","block");
+      $('.vignettes').removeClass('hidden');
       if ( $('.vignettes').not(".Scifi")){
-        $('.vignettes').not(".Scifi").css('display','none');
+        $('.vignettes').not(".Scifi").addClass('hidden');
+        $('#btnplusfilm').addClass('hidden');
       }
     }
     else if (btnArray[($(this).val())-1] === "Dramatique"){
-      $('.vignettes').css("display","block");
+      $('.vignettes').removeClass('hidden');
       if ( $('.vignettes').not(".Dramatique")){
-        $('.vignettes').not(".Dramatique").css('display','none');
+        $('.vignettes').not(".Dramatique").addClass('hidden');
+        $('#btnplusfilm').addClass('hidden');
       }
     }
     else if (btnArray[($(this).val())-1] === "Aventure"){
-      $('.vignettes').css("display","block");
+      $('.vignettes').removeClass('hidden');
       if ( $('.vignettes').not(".Aventure")){
-        $('.vignettes').not(".Aventure").css('display','none');
+        $('.vignettes').not(".Aventure").addClass('hidden');
+        $('#btnplusfilm').addClass('hidden');
       }
     }
-    else {
-      $('.vignettes').css('display','block');
-    }
+    // else {
+    //   $('.ouais').removeClass('hidden');
+    // }
     })

@@ -343,6 +343,22 @@ main h2{
 	/*min-width: 30vw;*/
 }
 
+.collapse .show{
+	/*margin: 0;*/
+	display: flex;
+	flex-flow: row wrap !important;
+	justify-content: space-around;
+	/*align-content: flex-start;*/
+}
+
+.collapse .show{
+	margin: 0;
+}
+
+.hidden{
+	display: none;
+}
+
 
 /*SHOP MOVIES*/
 
