@@ -3,6 +3,18 @@
 	color: #FE4240;
 }
 
+/*MEDIAQUERIES*/
+
+@media(max-width: 992px){
+	.jumbotron h2{
+		margin : 3px 0 0 0 !important;
+	}
+
+	.first_movies .card{
+	margin: 0 10px !important;
+	}
+}
+
 /*HEADER*/
 
 	/*TITRES*/
@@ -151,13 +163,7 @@ nav.navbar{
 	margin-top: 0.8rem;
 }
 
-	/*MEDIAQUERIES HEADER*/
 
-@media(max-width: 840px){
-	.jumbotron h2{
-		margin : 3px 0 0 0 !important;
-	}
-}
 
 	/*REDLINE*/
 
@@ -224,13 +230,6 @@ main h2{
 
 /*SECTION MAIN*/
 
-.featured .content{
-	margin: 0 13vw;
-}
-
-.featured .row{
-	margin-bottom: 1rem;
-}
 
 .btn_section {
 	width: 95px;
@@ -245,10 +244,66 @@ main h2{
 	color: white;
 }
 
+/*FIRST MOVIES*/
+
+.first_movies .content{
+	margin: 0 12vw;
+	font-size: 0.9rem !important;
+}
+
 .first_movies {
-	justify-content: center;
+	margin-top: 8px;
 	margin-bottom: 30px;
 }
+
+.first_movies img{
+	height: 30vh;
+	border-radius: 0;
+}
+
+.first_movies .carousel-item{
+		border: 1px solid #C6C6C6;
+		padding: 2rem;
+}
+
+.first_movies .row{
+	justify-content: space-around;
+}
+
+.first_movies .card{
+	border: none;
+	margin: 0;
+}
+
+.first_movies .card-body{
+	padding: 5px 0 0 0;
+	font-size: 0.8rem !important;
+}
+
+.first_movies .card-title{
+	text-align: center;
+	font-size: 0.8rem;
+}
+
+.first_movies p{
+	margin: 0;
+}
+
+.first_movies .card-genre{
+	text-align: right;
+	font-weight: bold;
+}
+
+/*FEATURED*/
+
+.featured .content{
+	margin: 0 13vw;
+}
+
+.featured .row{
+	margin-bottom: 1rem;
+}
+
 
 .vignettes{
 	padding : 0.3rem;
@@ -283,13 +338,23 @@ main h2{
     height: 100%;
 	background-color: #E9E9EA;
 	border-bottom: 2px solid #C6C6C6;
-
 }
 
 .shop_movies img{
 	border-radius: 0;
 	margin: 0 auto 0.3rem;
 	height: 33vh;
+}
+
+	/*partie vidéo*/
+
+.my-shop-video{
+	height: 70vh;
+	padding: 0.3rem;
+}
+
+.my-shop-video .card{
+	border: 0;
 }
 
 .my-shop-video .card-body {
@@ -305,7 +370,6 @@ main h2{
 	align-items: center;
 }
 
-
 .my-shop-video p{
 	margin: 0 !important;
 	font-size: 0.9rem;
@@ -317,14 +381,6 @@ main h2{
 }
 
 
-.my-shop-video{
-	height: 75vh;
-	padding: 0.3rem;
-}
-
-.my-shop-video .card{
-	border: 0;
-}
 
 /*BTN PLUS/MOINS FILM*/
 
@@ -343,23 +399,11 @@ main h2{
 	border: solid 1px #0D0D0D ;
 }
 
- .container .btnplusmoinsfilm {
-
-	display: flex !important;
- 	justify-content: center !important;
- }
-
- .images .container {
-
- 	display: flex;
-
- }
-
-.main .container {
-
+/*.main .container {
 	flex-wrap: wrap;
  	justify-content: space-around;
-}
+}*/
+
 .generale{
 background-color: #0D0D0D;
 color: white;
