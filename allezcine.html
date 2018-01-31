@@ -415,15 +415,15 @@
 		<section class="featured" id="featured_movies">
 			<h2>FEATURED MOVIES</h2>
 			<div class="content">
-				<div class="row">
-					<button type="button" class="btn_section" id="first_btn">All</button>
-					<button type="button" class="btn_section">Thriller</button>
-					<button type="button" class="btn_section">Policiers</button>
-					<button type="button" class="btn_section">Comedie</button>
-					<button type="button" class="btn_section">Scifi</button>
-					<button type="button" class="btn_section">Dramatique</button>
-					<button type="button" class="btn_section">Aventure</button>
-					<button type="button" class="btn_section" id="last_btn"></button>
+				<div class="row" id="button-parent">
+					<button value="1" type="button" class="btn_section">All</button>
+					<button value="2" type="button" class="btn_section">Thriller</button>
+					<button value="3" type="button" class="btn_section">Policiers</button>
+					<button value="4" type="button" class="btn_section">Comedie</button>
+					<button value="5" type="button" class="btn_section">Scifi</button>
+					<button value="6" type="button" class="btn_section">Dramatique</button>
+					<button value="7" type="button" class="btn_section">Aventure</button>
+					<button value="8" type="button" class="btn_section"></button>
 				</div>
 				<div class="row">
 			<!-- Tri par Genre :  -->
@@ -514,12 +514,9 @@
 						</div>
 					</div>
 				</div>
-				<!-- BOUTON -->
-				<div class="row">
-					<button id="btnplusfilm" class="btnplusmoinsfilm" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Plus de Films</button>
-				</div>
+
 			</div>
-		</section>
+
 				<!--   ___________ -->
 				<div class="featured collapse" id="collapseExample">
 
@@ -616,6 +613,11 @@
 					</div>
 
 				</div>
+				<!-- BOUTON -->
+				<div class="row">
+					<button id="btnplusfilm" class="btnplusmoinsfilm" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Plus de Films</button>
+				</div>
+				</section>
 
 
 
@@ -913,7 +915,7 @@
 									</div>
 								</div>
 								<div class="row">
-									<div class="col-3 red">	
+									<div class="col-3 red">
 										<p>Genres  :</p>
 									</div>
 									<div class="col-9">
@@ -921,7 +923,7 @@
 									</div>
 								</div>
 								<div class="row">
-									<div class="col-3 red">		
+									<div class="col-3 red">
 										<p>Price  :</p>
 									</div>
 									<div class="col-9">
@@ -1116,20 +1118,7 @@
 
 			<!-- BTN PLUS/MOINS DE FILMS (EN COURS) -->
 			<script>
-				$("#btnplusfilm").click(function(event) {
-					if ($('#btnplusfilm').html() == "Plus de Films") {
-						$('#btnplusfilm').html("Moins de Films");
-					} else {
-						$('#btnplusfilm').html("Plus de Films");
-					}
-				});
-				$("#btnplusserie").click(function(event) {
-					if ($('#btnplusserie').html() == "Plus de Séries") {
-						$('#btnplusserie').html("Moins de Séries");
-					} else {
-						$('#btnplusserie').html("Plus de Séries");
-					}
-				});
+
 			</script>
 
 </body>
