@@ -22,7 +22,7 @@
 		height: 50vh !important;
 	}
 
-.shop_movies img{
+	.shop_movies img{
 		height: 52vh !important;
 	}
 }
@@ -346,6 +346,10 @@ main h2{
 
 /*SHOP MOVIES*/
 
+.shop_movies .row{
+	margin-bottom: 0.3rem;
+}
+
 .shop_movies .card{
     height: 100%;
 	background-color: #E9E9EA;
@@ -355,13 +359,13 @@ main h2{
 .shop_movies img{
 	border-radius: 0;
 	margin: 0 auto 0.3rem;
-	height: 33vh;
+	height: 35vh !important;
 }
 
 	/*partie vidéo*/
 
 .my-shop-video{
-	height: 70vh;
+	height: 85vh;
 	padding: 0.3rem;
 }
 
@@ -370,6 +374,7 @@ main h2{
 }
 
 .my-shop-video .card-body {
+	padding: 0.7rem 0.7rem;
 	background-color: #0D0D0D;
 	color:#fff;
 	border-radius: 0;
