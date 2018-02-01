@@ -458,11 +458,15 @@ color: white;
 }
 
 .RSS{
-
 	width: 150px;
 	height: 40px;
 	border-top-right-radius: 20px;
 	border-bottom-right-radius: 20px;
+}
+
+.RSS span{
+	display: inline-block;
+	margin-top: 9px !important;
 }
 
 #facebook{
@@ -493,9 +497,8 @@ color: white;
 #twitter:hover{
 	transition:0.5s;
 	margin-left: 0px;
-	display: flex;
-	justify-content: center;
 }
+
 #google:hover{
 	transition:0.5s;
 	margin-left: 0px;
@@ -509,57 +512,28 @@ color: white;
 	margin-left: 0px;
 }
 
-#twitter img {
+.RSS img{
 	width: 30px;
-	margin-top: 5px;
+	margin-top: -3px;
 	margin-left:20px;
 	background-color: white;
 	border-radius: 100%;
 
-}
-#facebook img {
-	width: 30px;
-	margin-top: 5px;
-	margin-left:20px;
-	background-color: white;
-	border-radius: 100%;
-
-}
-	#mystere img {
-	width: 30px;
-	margin-top: 5px;
-	margin-left:20px;
-	background-color: white;
-	border-radius: 100%;
-
-}
-	#google img {
-	width: 30px;
-	margin-top: 5px;
-	margin-left:20px;
-	background-color: white;
-	border-radius: 100%;
 }
 
 .RSS a{
 	text-decoration: none;
 	color: white;
 	margin-left: 47px;
-
+	
 
 }
 
  #facebook a{
-
-	text-decoration: none;
-	color: white;
 	margin-left: 25px !important;
 }
 
 #google a{
-
-	text-decoration: none;
-	color: white;
 	margin-left: 33px !important;
 }
 
