@@ -1,10 +1,11 @@
 // Function plus de films , moins de films tout ça ...
-
 $("#btnplusfilm").click(function(event) {
   if ($('#btnplusfilm').html() == "Plus de Films") {
     $('#btnplusfilm').html("Moins de Films");
+    $('#collapseExample').replaceWith(function() { return this.innerHTML; });
   } else {
     $('#btnplusfilm').html("Plus de Films");
+    $("<div id='collapseExample'>").addClass("featured").addClass("collapse").insertBefore('#featured_movies .row div:nth-child(13)').removeClass("show");
   }
 });
 $("#btnplusserie").click(function(event) {
