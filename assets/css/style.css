@@ -397,6 +397,13 @@ main h2{
 	font-size: 0.7rem;
 }
 
+	/*boutons slide*/
+.shop_movies .btnSlide{
+	background-color: #000 ;
+	color :#fff ;
+	border: none;
+}
+
 
 
 /*BTN PLUS/MOINS FILM*/
