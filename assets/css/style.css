@@ -248,7 +248,7 @@ main h2{
 	height: 34px;
 	margin: 15px 0px 0px 2px;
 	border-style: none;
-	pointer: cursor;
+	cursor: pointer;
 }
 
 .btn_section:hover {
@@ -362,6 +362,10 @@ main h2{
 	height: 35vh !important;
 }
 
+.shop_movies .firstSpan{
+	margin-left: 10px !important;
+}
+
 	/*partie vidéo*/
 
 .my-shop-video{
@@ -396,6 +400,8 @@ main h2{
 	margin: 0 !important;
 	font-size: 0.7rem;
 }
+
+
 
 	/*boutons slide*/
 .shop_movies .btnSlide{
