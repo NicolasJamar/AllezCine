@@ -45,23 +45,23 @@
 							</div>
 						</li>
 						<li class="nav-item hover">
-							<a class="nav-link text-dark" href="photo.html">Movies</a>
+							<a class="nav-link text-dark" href="#featured_movies">Movies</a>
 						</li>
 						<li class="nav-item hover">
-							<a class="nav-link text-dark" href="restaurant.html">Series</a>
+							<a class="nav-link text-dark" href="#featured_series">Series</a>
 						</li>
 						<li class="nav-item hover">
-							<a class="nav-link text-dark" href="contact.html">  Shop  </a>
+							<a class="nav-link text-dark" href="#shopmovies">  Shop  </a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link homeContact" href="#"><span class="red text-white">Contact</span></a>
+							<a class="nav-link homeContact" href="#contactus"><span class="red text-white">Contact</span></a>
 						</li>
 					</ul>
 					<div class="input-group collapse ml-3">
 						<input type="text" class="form-control" placeholder="Recherche" aria-label="Recherche" aria-describedby="basic-addon1">
 						<div class="input-group-append">
 							<span class="input-group-text text-white" id="basic-addon1"><i class="fa fa-search" aria-hidden="true"></i>
-									</span>
+							</span>
 						</div>
 					</div>
 				</div>
@@ -598,7 +598,7 @@
 				</div>
 				<!-- BOUTON -->
 				<div class="row">
-					<button id="btnplusfilm" class="btnplusmoinsfilm">Plus de Films</button>
+					<button id="btnplusfilm" class="btnplusmoins">Plus de Films</button>
 				</div>
 			</div>
 		</section>
@@ -660,8 +660,6 @@
 							<span>1998</span>
 						</div>
 					</div>
-				</div>
-				<div class="row">
 					<div class="col-lg-2 col-md-4 col-sm-6 vignettes v-series-js Policiers">
 						<div class="card m-0">
 							<img class="card-img-top" src="assets/img/series/intouchables_policier_2009.jpg">
@@ -704,17 +702,8 @@
 							<span>1998</span>
 						</div>
 					</div>
-				</div>
-				<div class="row">
-					<button id="btnplusserie" class="btnplusmoinsfilm" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">Plus de Séries</button>
-				</div>
-			</div>
-			<!-- </section> -->
-			<!--   ____________
- -->
-			<div class="featured collapse" id="collapseExample2">
-				<div class="content">
-					<div class="row card-deck">
+			<!--   ____________-->
+			
 						<div class="col-lg-2 col-md-4 col-6 vignettes v-series-js Action">
 							<div class="card m-0">
 								<img class="card-img-top" src="assets/img/series/Homeland_Action_2013.jpg">
@@ -757,9 +746,6 @@
 								<span>2010</span>
 							</div>
 						</div>
-					</div>
-					<div class="row card-deck">
-
 						<div class="col-lg-2 col-md-4 col-6 vignettes v-series-js Scifi">
 							<div class="card m-0">
 								<img class="card-img-top" src="assets/img/series/startrek_SF_2002.jpg">
@@ -803,12 +789,15 @@
 							</div>
 						</div>
 					</div>
+					<div class="row">
+						<button id="btnplusserie" class="btnplusmoins">Plus de Séries</button>
+					</div>
 				</div>
-			</div>
+			</section>
 
 			<!-- SHOP -->
 
-			<div class="container-fluid shop_movies row mx-0">
+			<div class="container-fluid shop_movies row mx-0" id="shopmovies">
 				<h2>SHOP MOVIES</h2>
 				<div class="col-md-1 offset-md-11 mr-0 pr-0">
 					<button id="my-btn-gauche" class="btnSlide" href="#carouselExampleControls" role="button" data-slide="prev"><</button>
@@ -1116,9 +1105,11 @@
 			</div>
 				<!-- End: SHOP -->
 				<!-- CONTACT -->
+			<div id="contactus">
 				<form>
+					<h2>CONTACTS US</h2>
 					<div class="container">
-						<h2 id="contact">CONTACTS US</h2>
+						
 						<div class="form-row">
 							<div class="form-group col-md-6">
 								<input type="text" class="form-control" placeholder="FIRST NAME">
@@ -1138,9 +1129,10 @@
 						<div class="form-group">
 							<textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="YOUR MESSAGE"></textarea>
 						</div>
-						<button type="submit" class="btn btn-primary mb-2 contactUs">SEND MESSAGE</button>
+						<button type="submit" class="btn btn-primary mb-2 contactmessage">SEND MESSAGE</button>
 					</div>
 				</form>
+			</div>
 	</main>
 
 	<footer class="footer">

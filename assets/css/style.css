@@ -235,9 +235,16 @@ nav.navbar{
 /*ALIXE*/
 
 main h2{
+	margin-left: 3rem;
+	padding: 0.7rem 1rem;
 	border-left: solid 4px #FE4240;
-	/*margin-left: 232px; */
 	border-radius: 1px;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+#shopmovies h2{
+	margin-left: 2rem;
 }
 
 
@@ -406,8 +413,6 @@ main h2{
 	font-size: 0.7rem;
 }
 
-
-
 	/*boutons slide*/
 .shop_movies .btnSlide{
 	background-color: #000 ;
@@ -419,25 +424,18 @@ main h2{
 
 /*BTN PLUS/MOINS FILM*/
 
- .btnplusmoinsfilm {
+ .btnplusmoins {
 
  	border: none;
  	background-color: #FE4240;
  	color:white;
  	margin: 0 auto;
-
+	cursor: pointer;
  }
 
- .btnplusmoinsfilm:hover{
-
+ .btnplusmoins:hover{
 	background-color: #0D0D0D;
-	border: solid 1px #0D0D0D ;
 }
-
-/*.main .container {
-	flex-wrap: wrap;
- 	justify-content: space-around;
-}*/
 
 .generale{
 background-color: #0D0D0D;
@@ -445,15 +443,19 @@ color: white;
 
 }
 
+#contactus{
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
 
-.contactUs{
+.contactmessage{
 	border-radius: 0;
 	border: solid 1px #FE4240 ;
 	color: white;
 	background-color: #FE4240;
 }
 
-.contactUs:hover{
+.contactmessage:hover{
 
 	background-color: #0D0D0D;
 	border: solid 1px #0D0D0D ;
