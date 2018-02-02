@@ -13,18 +13,6 @@
 	.first_movies .card{
 		margin: 0 10px !important;
 	}
-
-	.first_movies img{
-		height: 45vh !important;
-	}
-
-	.featured .vignettes img{
-		height: 50vh !important;
-	}
-
-	.shop_movies img{
-		height: 52vh !important;
-	}
 }
 
 /*HEADER*/
