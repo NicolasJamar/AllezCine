@@ -362,9 +362,13 @@ main h2{
 	height: 35vh !important;
 }
 
-.shop_movies .firstSpan{
-	margin-left: 10px !important;
+.shop_movies .footer-card{
+	display: flex;
+	justify-content: space-between;
+	padding: 0 0.5rem;
 }
+
+
 
 	/*partie vidéo*/
 
