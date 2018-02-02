@@ -120,7 +120,7 @@
 			<ul class="nav">
 				<!-- PHONE -->
 				<li class="nav-item mx-4 my-auto">
-					<i class="fa fa-phone" aria-hidden="true"> (+000)009 455 4085</i>
+					<i class="fa fa-phone text-white" aria-hidden="true"> (+000)009 455 4085</i>
 				</li>
 				<!-- BOUTON LOGIN-->
 				<li class="nav-item">
@@ -511,6 +511,7 @@
 							<span>2017</span>
 						</div>
 					</div>
+
 					<div class="col-lg-2 col-md-4 col-sm-6 vignettes Comedie d-none hide">
 						<div class="card m-0">
 							<img class="card-img-top" src="assets/img/intouchables-2011-comedie.jpg">
@@ -596,11 +597,11 @@
 						</div>
 					</div>
 				</div>
-			<!-- BOUTON -->
-			<div class="row">
-				<button id="btnplusfilm" class="btnplusmoinsfilm">Plus de Films</button>
+				<!-- BOUTON -->
+				<div class="row">
+					<button id="btnplusfilm" class="btnplusmoinsfilm">Plus de Films</button>
+				</div>
 			</div>
-		</div>
 		</section>
 
 
@@ -804,17 +805,105 @@
 						</div>
 					</div>
 				</div>
-
 			</div>
+
 			<!-- SHOP -->
-			<section class="shop_movies">
-				<div class="container-fluid mx-0">
-					<h2>SHOP MOVIES</h2>
-					<div class="row mx-1">
-						<div class="col-md-1 offset-md-11 ">
-							<button id="my-btn-gauche"><</button> <button id="my-btn-droite">></button>
+
+			<div class="container-fluid shop_movies row mx-0">
+				<h2>SHOP MOVIES</h2>
+				<div class="col-md-1 offset-md-11 mr-0 pr-0">
+					<button id="my-btn-gauche" class="btnSlide" href="#carouselExampleControls" role="button" data-slide="prev"><</button>
+					<button id="my-btn-droite" class="btnSlide" href="#carouselExampleControls" role="button" data-slide="next">></button>
+				</div>
+				
+				<div id="carouselExampleControls" class="carousel slide col-lg-7 p-0" data-ride="carousel" data-interval="false">
+					<div class="carousel-inner">
+						<div class="carousel-item active" alt="First slide">
+							<div class="row w-100 m-0">
+								<div class="col-lg-3 col-md-3 col-6 vignettes">
+									<div class="card">
+										<img class="card-img-top" src="assets/img/starwarsempire-1980-scifi.jpg">
+										<h3>Empire strike back</h3>
+										<div class="footer-card">
+											<span>1980</span>
+											<span class="red">7€</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-3 col-md-3 col-6 vignettes">
+									<div class="card">
+										<img class="card-img-top" src="assets/img/grave_2016_horreur.jpg">
+										<h3>Grave</h3>
+										<div class="footer-card">
+											<span>2016</span>
+											<span class="red">12€</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-3 col-md-3 col-6 vignettes">
+									<div class="card">
+										<img class="card-img-top" src="assets/img/Survivestyle5-2004-comedie.jpg">
+										<h3>Survive Style</h3>
+										<div class="footer-card">
+											<span>2004</span>
+											<span class="red">10€</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-3 col-md-3 col-6 vignettes">
+									<div class="card">
+										<img class="card-img-top" src="assets/img/grantorino_2008_drame.jpg">
+										<h3>Gran Torino</h3>
+										<div class="footer-card">
+											<span>2008</span>
+											<span class="red">10€</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-lg-3 col-md-3 col-6 vignettes">
+									<div class="card">
+										<img class="card-img-top" src="assets/img/limitless_2015_action.jpg">
+										<h3>Limitless</h3>
+										<div class="footer-card">
+											<span>2015</span>
+											<span class="red">10€</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-3 col-md-3 col-6 vignettes">
+									<div class="card">
+										<img class="card-img-top" src="assets/img/shaun_2004_Comedie.jpg">
+										<h3>Shaun of the Dead</h3>
+										<div class="footer-card">
+											<span>2004</span>
+											<span class="red">10€</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-3 col-md-3 col-6 vignettes">
+									<div class="card">
+										<img class="card-img-top" src="assets/img/seven-1995-thriller.jpg">
+										<h3>Seven</h3>
+										<div class="footer-card">
+											<span>1995</span>
+											<span class="red">7€</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-3 col-md-3 col-6 vignettes">
+									<div class="card">
+										<img class="card-img-top" src="assets/img/swissarmyman-2016-comedie.jpg">
+										<h3>Swiss army man</h3>
+										<div class="footer-card">
+											<span>2016</span>
+											<span class="red">10€</span>
+										</div>
+									</div>
+								</div>
+							</div>	
 						</div>
-						<div class="col-lg-7">
+						<div class="carousel-item" alt="Second slide">
 							<div class="row">
 								<div class="col-lg-3 col-md-3 col-6 vignettes">
 									<div class="card">
@@ -827,128 +916,232 @@
 									<div class="card">
 										<img class="card-img-top" src="assets/img/grave_2016_horreur.jpg">
 										<h3>Grave</h3>
-										<span>2016</span>
+										<div class="footer-card">
+											<span>2016</span>
+											<span class="red">12€</span>
+										</div>
 									</div>
 								</div>
 								<div class="col-lg-3 col-md-3 col-6 vignettes">
 									<div class="card">
 										<img class="card-img-top" src="assets/img/Survivestyle5-2004-comedie.jpg">
 										<h3>Survive Style</h3>
-										<span>2016</span>
+										<div class="footer-card">
+											<span>2004</span>
+											<span class="red">10€</span>
+										</div>
 									</div>
 								</div>
 								<div class="col-lg-3 col-md-3 col-6 vignettes">
 									<div class="card">
 										<img class="card-img-top" src="assets/img/grantorino_2008_drame.jpg">
 										<h3>Gran Torino</h3>
-										<span>2008</span>
+										<div class="footer-card">
+											<span>2008</span>
+											<span class="red">10€</span>
+										</div>
 									</div>
 								</div>
-							</div>
-							<div class="row">
+
 								<div class="col-lg-3 col-md-3 col-6 vignettes">
 									<div class="card">
 										<img class="card-img-top" src="assets/img/limitless_2015_action.jpg">
 										<h3>Limitless</h3>
-										<span>2015</span>
+										<div class="footer-card">
+											<span>2015</span>
+											<span class="red">10€</span>
+										</div>
 									</div>
 								</div>
 								<div class="col-lg-3 col-md-3 col-6 vignettes">
 									<div class="card">
 										<img class="card-img-top" src="assets/img/Survivestyle5-2004-comedie.jpg">
 										<h3>Bad Moms</h3>
-										<span>2016</span>
+										<div class="footer-card">
+											<span>2004</span>
+											<span class="red">10€</span>
+										</div>
 									</div>
 								</div>
 								<div class="col-lg-3 col-md-3 col-6 vignettes">
 									<div class="card">
 										<img class="card-img-top" src="assets/img/Survivestyle5-2004-comedie.jpg">
 										<h3>Jason Bourne</h3>
-										<span>2016</span>
+										<div class="footer-card">
+											<span>2016</span>
+											<span class="red">10€</span>
+										</div>
 									</div>
 								</div>
 								<div class="col-lg-3 col-md-3 col-6 vignettes">
 									<div class="card">
 										<img class="card-img-top" src="assets/img/Survivestyle5-2004-comedie.jpg">
 										<h3>Rezort</h3>
-										<span>2016</span>
+										<div class="footer-card">
+											<span>2004</span>
+											<span class="red">10€</span>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-5 my-shop-video">
-							<div class="card m-0">
-								<iframe id="my-shop-video" width="100%" height="60%" src="https://www.youtube.com/embed/_etwz7NkemE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-								<div class="card-body p-3 m-0">
-									<h4 class="red text-uppercase mb-3">Coucou</h4>
-									<div class="row">
-										<div class="col-3 red">
-											<p>Story line :</p>
-										</div>
-										<div class="col-9">
-											<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque est odit voluptatem beatae magnam nisi obcaecati, officiis autem omnis? Ut repudiandae id esse, neque enim quasi quisquam sequi error suscipit.</span>
+						<div class="carousel-item" alt="Third slide">
+							<div class="row">
+								<div class="col-lg-3 col-md-3 col-6 vignettes">
+									<div class="card">
+										<img class="card-img-top" src="assets/img/thefall-2006-dramatique.jpg">
+										<h3>The Fall</h3>
+										<div class="footer-card">
+											<span>2006</span>
+											<span class="red">10€</span>
 										</div>
 									</div>
-									<div class="row">
-										<div class="col-3 red">
-											<p>Realise on :</p>
-										</div>
-										<div class="col-9">
-											<span>hiuhiijhihi</span>
-										</div>
-									</div>
-									<div class="row">
-										<div class="col-3 red">
-											<p>Genres :</p>
-										</div>
-										<div class="col-9">
-											<span>hiuhiijhihi</span>
+								</div>
+								<div class="col-lg-3 col-md-3 col-6 vignettes">
+									<div class="card">
+										<img class="card-img-top" src="assets/img/grave_2016_horreur.jpg">
+										<h3>Grave</h3>
+										<div class="footer-card">
+											<span>2016</span>
+											<span class="red">10€</span>
 										</div>
 									</div>
-									<div class="row">
-										<div class="col-3 red">
-											<p>Price :</p>
-										</div>
-										<div class="col-9">
-											<span>hiuhiijhihi</span>
+								</div>
+								<div class="col-lg-3 col-md-3 col-6 vignettes">
+									<div class="card">
+										<img class="card-img-top" src="assets/img/Survivestyle5-2004-comedie.jpg">
+										<h3>Survive Style</h3>
+										<div class="footer-card">
+											<span>2004</span>
+											<span class="red">10€</span>
 										</div>
 									</div>
-
+								</div>
+								<div class="col-lg-3 col-md-3 col-6 vignettes">
+									<div class="card">
+										<img class="card-img-top" src="assets/img/grantorino_2008_drame.jpg">
+										<h3>Gran Torino</h3>
+										<div class="footer-card">
+											<span>2008</span>
+											<span class="red">10€</span>
+										</div>
+									</div>
 								</div>
 
+								<div class="col-lg-3 col-md-3 col-6 vignettes">
+									<div class="card">
+										<img class="card-img-top" src="assets/img/limitless_2015_action.jpg">
+										<h3>Limitless</h3>
+										<div class="footer-card">
+											<span>2015</span>
+											<span class="red">10€</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-3 col-md-3 col-6 vignettes">
+									<div class="card">
+										<img class="card-img-top" src="assets/img/zoolander-2001-comedie.jpg">
+										<h3>Zoolander</h3>
+										<div class="footer-card">
+											<span>2001</span>
+											<span class="red">10€</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-3 col-md-3 col-6 vignettes">
+									<div class="card">
+										<img class="card-img-top" src="assets/img/Survivestyle5-2004-comedie.jpg">
+										<h3>Jason Bourne</h3>
+										<div class="footer-card">
+											<span>2004</span>
+											<span class="red">10€</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-3 col-md-3 col-6 vignettes">
+									<div class="card">
+										<img class="card-img-top" src="assets/img/lepatientanglais-1996-dramatique.jpg">
+										<h3>Le patient anglais</h3>
+										<div class="footer-card">
+											<span>1996</span>
+											<span class="red">6€</span>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</section>
-			<!-- End: SHOP -->
-			<!-- CONTACT -->
-			<form>
-				<div class="container">
-					<h2 id="contact">CONTACTS US</h2>
-					<div class="form-row">
-						<div class="form-group col-md-6">
-							<input type="text" class="form-control" placeholder="FIRST NAME">
-						</div>
-						<div class="form-group col-md-6">
-							<input type="text" class="form-control" placeholder="FIRST NAME">
+				<div class="col-lg-5 my-shop-video">
+					<div class="card m-0">
+						<iframe id="my-shop-video" width="100%" height="100%" src="https://www.youtube.com/embed/_etwz7NkemE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+						<div class="card-body m-0">
+							<h4 class="red text-uppercase mb-1">Coucou</h4>
+							<div class="row">
+								<div class="col-3 red">
+									<p>Story line  :</p>
+								</div>
+								<div class="col-9">
+									<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque est odit voluptatem beatae magnam nisi obcaecati, officiis autem omnis? Ut repudiandae id esse, neque enim quasi quisquam sequi error suscipit.</span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-3 red">
+									<p>Realise on  :</p>
+								</div>
+								<div class="col-9">
+									<span>hiuhiijhihi</span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-3 red">
+									<p>Genres  :</p>
+								</div>
+								<div class="col-9">
+									<span>hiuhiijhihi</span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-3 red">
+									<p>Price  :</p>
+								</div>
+								<div class="col-9">
+									<span>hiuhiijhihi</span>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="form-row">
-						<div class="form-group col-md-6">
-							<input type="text" class="form-control" placeholder="EMAIL">
-						</div>
-						<div class="form-group col-md-6">
-							<input type="text" class="form-control" placeholder="SUBJECT">
-						</div>
-					</div>
-					<div class="form-group">
-						<textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="YOUR MESSAGE"></textarea>
-					</div>
-					<button type="submit" class="btn btn-primary mb-2">SEND MESSAGE</button>
 				</div>
-			</form>
+				
+			</div>
+				<!-- End: SHOP -->
+				<!-- CONTACT -->
+				<form>
+					<div class="container">
+						<h2 id="contact">CONTACTS US</h2>
+						<div class="form-row">
+							<div class="form-group col-md-6">
+								<input type="text" class="form-control" placeholder="FIRST NAME">
+							</div>
+							<div class="form-group col-md-6">
+								<input type="text" class="form-control" placeholder="FIRST NAME">
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="form-group col-md-6">
+								<input type="text" class="form-control" placeholder="EMAIL">
+							</div>
+							<div class="form-group col-md-6">
+								<input type="text" class="form-control" placeholder="SUBJECT">
+							</div>
+						</div>
+						<div class="form-group">
+							<textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="YOUR MESSAGE"></textarea>
+						</div>
+						<button type="submit" class="btn btn-primary mb-2">SEND MESSAGE</button>
+					</div>
+				</form>
 	</main>
 
 	<footer class="footer">
