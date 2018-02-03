@@ -135,8 +135,8 @@ $('.btn_section').click(function() {
       statutGenre = "";
       $('.vignettes').removeClass('d-none');
       $('.vignettes').addClass('d-block');
-      $('.hide').removeClass('d-block');
-      $('.hide').addClass('d-none');
+      $('.hide').removeClass('d-none');
+      $('.hide').addClass('d-block');
     } else if (btnArray[($(this).val()) - 1] === "Thriller") {
       statutGenre = "Thriller";
       triGenreDown(statutGenre);
