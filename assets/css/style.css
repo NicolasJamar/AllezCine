@@ -29,8 +29,6 @@
 
 /*HEADER*/
 
-	/*TITRES*/
-
 .jumbotron h1{
 	font-size: 3rem;
 }
@@ -110,6 +108,7 @@ nav.navbar{
 	border: none;
 	border-radius: 0 0 0 4px;
 	cursor: pointer;
+	z-index: 21;
 }
 
 #btnGroupDrop1:hover{
@@ -230,6 +229,8 @@ nav.navbar{
 }
 
 
+
+	/*TITRES*/
 
 /*ALIXE*/
 
@@ -535,7 +536,7 @@ color: white;
 	text-decoration: none;
 	color: white;
 	margin-left: 47px;
-	
+
 
 }
 
@@ -724,6 +725,23 @@ color: #a4a4a4;
   position: fixed;
   bottom: 20px;
   right: 30px;
-  z-index: 999;
+  z-index: 10;
   padding: 15px;
+}
+
+/*Structure Modals Watch Trailer*/
+#trailerModal{
+	position: fixed !important;
+	top: 0px;
+	left: 27vw;
+	z-index: 100 !important;
+	width:50vw;
+	height: 95vh !important;
+}
+#trailerModal .modal-body,#trailerModal2 .modal-body,#trailerModal3 .modal-body,#trailerModal4 .modal-body{
+	height: 45vh !important;
+
+}
+.modal-backdrop{
+	z-index: 20 !important;
 }
