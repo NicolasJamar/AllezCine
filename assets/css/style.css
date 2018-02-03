@@ -13,18 +13,6 @@
 	.first_movies .card{
 		margin: 0 10px !important;
 	}
-
-	.first_movies img{
-		height: 45vh !important;
-	}
-
-	.featured .vignettes img{
-		height: 50vh !important;
-	}
-
-	.shop_movies img{
-		height: 52vh !important;
-	}
 }
 
 /*HEADER*/
@@ -179,13 +167,13 @@ nav.navbar{
 
 	/*REDLINE*/
 
-#redLine{
+.redLine{
 	background-color: #FE4240;
-	height: 2.5rem;
-	font-size: 0.8rem;
+	/*height: 2.5rem;
+	font-size: 0.8rem;*/
 }
 
-#redLine button{
+.redLine button{
 	background-color: #000;
 	text-transform: uppercase;
 	font-size: 0.7rem;
@@ -195,25 +183,22 @@ nav.navbar{
 	margin: 0.4rem 0.1rem 0.3rem 0.1rem;
 }
 
-#redLine button:hover{
-	border: red;
-}
 
-#redLine .modal-content{
+.redLine .modal-content{
 	border-radius: 0px;
 }
 
-#redLine .modal-header{
+.redLine .modal-header{
 	background-color: rgba(0,0,0, 0.7);
 	border-radius: 0px;
 }
 
-#redLine h5{
+.redLine h5{
 	font-family: 'Muli', sans-serif;
 	font-weight: bold;
 }
 
-#redLine .modal-body a{
+.redLine .modal-body a{
 	text-decoration: none;
 	color: #fff;
 	background-color: #FE4240;
@@ -221,22 +206,33 @@ nav.navbar{
 	margin-left: 8rem;
 }
 
-#redLine .form-check{
+.redLine .form-check{
 	color: #FE4240;
 }
 
-#redLine input{
+.redLine input{
 	font-size: 1rem;
 }
 
+.redLine a{
+	font-size: 1rem;
+	cursor:pointer;
+}
 
 
 /*ALIXE*/
 
 main h2{
+	margin-left: 3rem;
+	padding: 0.7rem 1rem;
 	border-left: solid 4px #FE4240;
-	/*margin-left: 232px; */
 	border-radius: 1px;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+#shopmovies h2{
+	margin-left: 2rem;
 }
 
 
@@ -405,8 +401,6 @@ main h2{
 	font-size: 0.7rem;
 }
 
-
-
 	/*boutons slide*/
 .shop_movies .btnSlide{
 	background-color: #000 ;
@@ -418,25 +412,18 @@ main h2{
 
 /*BTN PLUS/MOINS FILM*/
 
- .btnplusmoinsfilm {
+ .btnplusmoins {
 
  	border: none;
  	background-color: #FE4240;
  	color:white;
  	margin: 0 auto;
-
+	cursor: pointer;
  }
 
- .btnplusmoinsfilm:hover{
-
+ .btnplusmoins:hover{
 	background-color: #0D0D0D;
-	border: solid 1px #0D0D0D ;
 }
-
-/*.main .container {
-	flex-wrap: wrap;
- 	justify-content: space-around;
-}*/
 
 .generale{
 background-color: #0D0D0D;
@@ -444,15 +431,24 @@ color: white;
 
 }
 
+#contactus{
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
 
-.mb-2{
+#contactus iframe{
+	height:45vh;
+	width: 100%;
+}
+
+.contactmessage{
 	border-radius: 0;
 	border: solid 1px #FE4240 ;
 	color: white;
 	background-color: #FE4240;
 }
 
-.mb-2:hover{
+.contactmessage:hover{
 
 	background-color: #0D0D0D;
 	border: solid 1px #0D0D0D ;
