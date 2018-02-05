@@ -239,7 +239,7 @@ main h2{
 /*SECTION MAIN*/
 
 
-.btn_section {
+.btn_section ,.btn_section_s {
 	width: 95px;
 	height: 34px;
 	margin: 15px 0px 0px 2px;
@@ -247,7 +247,7 @@ main h2{
 	cursor: pointer;
 }
 
-.btn_section:hover {
+.btn_section:hover, .btn_section_s:hover {
 	background-color: #FE4240;
 	color: white;
 }
@@ -531,7 +531,7 @@ color: white;
 	text-decoration: none;
 	color: white;
 	margin-left: 47px;
-	
+
 
 }
 

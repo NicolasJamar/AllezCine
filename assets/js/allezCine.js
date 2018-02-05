@@ -1,9 +1,13 @@
 // Bouton Filtre , Gérés de manière dynamique
 var button = document.querySelector('#button-parent'); // Selection du parent pour connaitre la longueur de l'array des boutons
 var filterBtnArray = document.querySelectorAll('.btn_section'); //Selectionne tout les boutons avec la class btn_section
+var buttons = document.querySelector('#button-parent-s')
+var filterBtnArrays = document.querySelectorAll('.btn_section_s');
 var btnArray = []; // création d'un array vide
+var btnArrays = [];
 var randImgArray = [];
 var statutGenre = "";
+var statutGenres = "";
 var shopVideos = [
 "https://www.youtube.com/embed/JNwNXF9Y6kY", //Star Wars
 "https://www.youtube.com/embed/TElJs93LLs8", //Grave
@@ -32,24 +36,41 @@ var alternateImgFooter = [
   "assets/img/14.jpeg",
   "assets/img/15.jpeg"
 ]
-
+//Tri pour movies
 var triGenreUp = function(x) {
-  $('.' + x).not('.hide').removeClass('d-none');
-  $('.' + x).not('.hide').addClass('d-block');
-  if ($('.vignettes').not("." + x)) {
-    $('.vignettes').not("." + x).removeClass('d-block');
-    $('.vignettes').not("." + x).addClass('d-none');
+  $('.' + x).not('.v-movies-js.hide').removeClass('d-none');
+  $('.' + x).not('.v-movies-js.hide').addClass('d-block');
+  if ($('.v-movies-js').not("." + x)) {
+    $('.v-movies-js').not("." + x).removeClass('d-block');
+    $('.v-movies-js').not("." + x).addClass('d-none');
   }
 }
 var triGenreDown = function(y) {
-  $('.vignettes').removeClass('d-none');
-  $('.vignettes').addClass('d-block');
-  if ($('.vignettes').not("." + y)) {
-    $('.vignettes').not("." + y).removeClass('d-block');
-    $('.vignettes').not("." + y).addClass('d-none');
+  $('.v-movies-js').removeClass('d-none');
+  $('.v-movies-js').addClass('d-block');
+  if ($('.v-movies-js').not("." + y)) {
+    $('.v-movies-js').not("." + y).removeClass('d-block');
+    $('.v-movies-js').not("." + y).addClass('d-none');
   }
 }
 
+//tri pour series
+var triGenreUps = function(x) {
+  $('.' + x).not('.v-series-js.hide').removeClass('d-none');
+  $('.' + x).not('.v-series-js.hide').addClass('d-block');
+  if ($('.v-series-js').not("." + x)) {
+    $('.v-series-js').not("." + x).removeClass('d-block');
+    $('.v-series-js').not("." + x).addClass('d-none');
+  }
+}
+var triGenreDowns = function(y) {
+  $('.v-series-js').removeClass('d-none');
+  $('.v-series-js').addClass('d-block');
+  if ($('.v-series-js').not("." + y)) {
+    $('.v-series-js').not("." + y).removeClass('d-block');
+    $('.v-series-js').not("." + y).addClass('d-none');
+  }
+}
 //Function pour le random des images dans le footer
 
 var randomize = function(){
@@ -66,31 +87,62 @@ document.addEventListener("DOMContentLoaded",function(event){
 for (i = 0; i < button.children.length; i++) { //début de boucle for sur la longueur de l'array des enfants grâce à "l'encre" du parent
   var filterBtnContent = document.querySelectorAll('.btn_section')[i].innerHTML; // Selectionne chaque bouton pour en connaitre le contenu HTML pour créer les genres présents dans l'array créé
   btnArray.push(filterBtnContent);
-} // Stocke chaque value dans l'array
+} // Stocke chaque value dans l'array pour les MOVIES
+for (z = 0; z < buttons.children.length; z++) { //début de boucle for sur la longueur de l'array des enfants grâce à "l'encre" du parent
+  var filterBtnContents = document.querySelectorAll('.btn_section_s')[z].innerHTML; // Selectionne chaque bouton pour en connaitre le contenu HTML pour créer les genres présents dans l'array créé
+  btnArrays.push(filterBtnContents);
+} // Stocke chaque value dans l'array pour les séries
 
 //Function + et - de films , séries à venir
 $("#btnplusfilm").click(function(event) {
   if ($('#btnplusfilm').html() === "Plus de Films" && statutGenre === "") {
-    $('.hide').addClass('d-block');
-    $('.hide').removeClass('d-none');
+    $('.v-movies-js.hide').addClass('d-block');
+    $('.v-movies-js.hide').removeClass('d-none');
     $('#btnplusfilm').html("Moins de Films");
   } else if ($('#btnplusfilm').html() === "Plus de Films" && statutGenre != "") {
-    if ($('.vignettes').hasClass(statutGenre)) {
-      $('.vignettes').addClass('d-none');
-      $('.vignettes').removeClass('d-block');
+    if ($('.v-movies-js').hasClass(statutGenre)) {
+      $('.v-movies-js').addClass('d-none');
+      $('.v-movies-js').removeClass('d-block');
       $('.' + statutGenre).addClass('d-block');
       $('.' + statutGenre).removeClass('d-none');
       $('#btnplusfilm').html("Moins de Films");
     }
   } else if ($('#btnplusfilm').html() === "Moins de Films" && statutGenre === "") {
-    $('.hide').addClass('d-none');
-    $('.hide').removeClass('d-block');
+    $('.v-movies-js.hide').addClass('d-none');
+    $('.v-movies-js.hide').removeClass('d-block');
     $('#btnplusfilm').html("Plus de Films");
   } else if ($('#btnplusfilm').html() === "Moins de Films" && statutGenre != "") {
-    if ($('.vignettes').hasClass(statutGenre)) {
-      $('.hide').addClass('d-none');
-      $('.hide').removeClass('d-block');
+    if ($('.v-movies-js').hasClass(statutGenre)) {
+      $('.v-movies-js.hide').addClass('d-none');
+      $('.v-movies-js.hide').removeClass('d-block');
       $('#btnplusfilm').html("Plus de Films");
+    }
+  }
+});
+
+//function + - series
+$("#btnplusserie").click(function(event) {
+  if ($('#btnplusserie').html() === "Plus de Séries" && statutGenres === "") {
+    $('.v-series-js.hide').addClass('d-block');
+    $('.v-series-js.hide').removeClass('d-none');
+    $('#btnplusserie').html("Moins de Séries");
+  } else if ($('#btnplusserie').html() === "Plus de Séries" && statutGenres != "") {
+    if ($('.v-series-js').hasClass(statutGenre)) {
+      $('.v-series-js').addClass('d-none');
+      $('.v-series-js').removeClass('d-block');
+      $('.' + statutGenres).addClass('d-block');
+      $('.' + statutGenres).removeClass('d-none');
+      $('#btnplusserie').html("Moins de Séries");
+    }
+  } else if ($('#btnplusserie').html() === "Moins de Séries" && statutGenres === "") {
+    $('.v-series-js.hide').addClass('d-none');
+    $('.v-series-js.hide').removeClass('d-block');
+    $('#btnplusserie').html("Plus de Séries");
+  } else if ($('#btnplusserie').html() === "Moins de Séries" && statutGenres != "") {
+    if ($('.v-series-js').hasClass(statutGenres)) {
+      $('.v-series-js.hide').addClass('d-none');
+      $('.v-series-js.hide').removeClass('d-block');
+      $('#btnplusserie').html("Plus de Séries");
     }
   }
 });
@@ -100,11 +152,11 @@ $('.btn_section').click(function() {
   if ($('#btnplusfilm').html() === "Plus de Films") {
     if (btnArray[($(this).val()) - 1] === "All") { // Selection du bouton "All" ( pareil pour les autres selections avec le bon genre)
       statutGenre = "";
-      if ($('.vignettes').not('.hide')) {
-        $('.vignettes').removeClass('d-none');
-        $('.vignettes').addClass('d-block');
-        $('.hide').removeClass('d-block');
-        $('.hide').addClass('d-none');
+      if ($('.v-movies-js').not('.hide')) {
+        $('.v-movies-js').removeClass('d-none');
+        $('.v-movies-js').addClass('d-block');
+        $('.v-movies-js.hide').removeClass('d-block');
+        $('.v-movies-js.hide').addClass('d-none');
       }
     } else if (btnArray[($(this).val()) - 1] === "Thriller") {
       statutGenre = "Thriller";
@@ -125,18 +177,18 @@ $('.btn_section').click(function() {
       statutGenre = "Aventure";
       triGenreUp(statutGenre);
     } else {
-      if ($('.vignettes').not('.hide')) {
-        $('.vignettes').removeClass('d-none');
-        $('.vignettes').addClass('d-block');
+      if ($('.v-movies-js').not('.hide')) {
+        $('.v-movies-js').removeClass('d-none');
+        $('.v-movies-js').addClass('d-block');
       }
     }
   } else if ($('#btnplusfilm').html() === "Moins de Films") {
     if (btnArray[($(this).val()) - 1] === "All") { // Selection du bouton "All" ( pareil pour les autres selections avec le bon genre)
       statutGenre = "";
-      $('.vignettes').removeClass('d-none');
-      $('.vignettes').addClass('d-block');
-      $('.hide').removeClass('d-none');
-      $('.hide').addClass('d-block');
+      $('.v-movies-js').removeClass('d-none');
+      $('.v-movies-js').addClass('d-block');
+      $('.v-movies-js.hide').removeClass('d-none');
+      $('.v-movies-js.hide').addClass('d-block');
     } else if (btnArray[($(this).val()) - 1] === "Thriller") {
       statutGenre = "Thriller";
       triGenreDown(statutGenre);
@@ -156,9 +208,72 @@ $('.btn_section').click(function() {
       statutGenre = "Aventure";
       triGenreDown(statutGenre);
     } else {
-      if ($('.vignettes').hasClass('hide'))
-        $('.hide').removeClass('d-none');
-      $('.hide').addClass('d-block');
+      if ($('.v-movies-js').hasClass('hide'))
+        $('.v-movies-js.hide').removeClass('d-none');
+      $('.v-movies-js.hide').addClass('d-block');
+    }
+  }
+})
+
+//tri series
+
+$('.btn_section_s').click(function() {
+  if ($('#btnplusserie').html() === "Plus de Séries") {
+    if (btnArrays[($(this).val()) - 1] === "All") { // Selection du bouton "All" ( pareil pour les autres selections avec le bon genre)
+      statutGenres = "";
+      if ($('.v-series-js').not('.hide')) {
+        $('.v-series-js').removeClass('d-none');
+        $('.v-series-js').addClass('d-block');
+        $('.v-series-js.hide').removeClass('d-block');
+        $('.v-series-js.hide').addClass('d-none');
+      }
+    } else if (btnArrays[($(this).val()) - 1] === "Action") {
+      statutGenres = "Action";
+      triGenreUps(statutGenres);
+    } else if (btnArrays[($(this).val()) - 1] === "Policiers") {
+      statutGenres = "Policiers";
+      triGenreUps(statutGenres);
+    } else if (btnArrays[($(this).val()) - 1] === "Comedie") {
+      statutGenres = "Comedie";
+      triGenreUps(statutGenres);
+    } else if (btnArrays[($(this).val()) - 1] === "Scifi") {
+      statutGenres = "Scifi";
+      triGenreUps(statutGenres);
+    } else if (btnArrays[($(this).val()) - 1] === "Horreur") {
+      statutGenres = "Horreur";
+      triGenreUps(statutGenres);
+    } else {
+      if ($('.v-series-js').not('.hide')) {
+        $('.v-series-js').removeClass('d-none');
+        $('.v-series-js').addClass('d-block');
+      }
+    }
+  } else if ($('#btnplusserie').html() === "Moins de Séries") {
+    if (btnArrays[($(this).val()) - 1] === "All") { // Selection du bouton "All" ( pareil pour les autres selections avec le bon genre)
+      statutGenres = "";
+      $('.v-series-js').removeClass('d-none');
+      $('.v-series-js').addClass('d-block');
+      $('.v-series-js.hide').removeClass('d-none');
+      $('.v-series-js.hide').addClass('d-block');
+    } else if (btnArrays[($(this).val()) - 1] === "Action") {
+      statutGenres = "Action";
+      triGenreDowns(statutGenres);
+    } else if (btnArrays[($(this).val()) - 1] === "Policiers") {
+      statutGenre = "Policiers";
+      triGenreDowns(statutGenres);
+    } else if (btnArrays[($(this).val()) - 1] === "Comedie") {
+      statutGenres = "Comedie";
+      triGenreDowns(statutGenres);
+    } else if (btnArrays[($(this).val()) - 1] === "Scifi") {
+      statutGenres = "Scifi";
+      triGenreDowns(statutGenres);
+    } else if (btnArrays[($(this).val()) - 1] === "Horreur") {
+      statutGenres = "Horreur";
+      triGenreDowns(statutGenres);
+    } else {
+      if ($('.v-series-js').hasClass('hide'))
+        $('.v-series-js.hide').removeClass('d-none');
+      $('.v-series-js.hide').addClass('d-block');
     }
   }
 })
