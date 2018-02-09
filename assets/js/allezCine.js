@@ -127,7 +127,7 @@ $("#btnplusserie").click(function(event) {
     $('.v-series-js.hide').removeClass('d-none');
     $('#btnplusserie').html("Moins de Séries");
   } else if ($('#btnplusserie').html() === "Plus de Séries" && statutGenres != "") {
-    if ($('.v-series-js').hasClass(statutGenre)) {
+    if ($('.v-series-js').hasClass(statutGenres)) {
       $('.v-series-js').addClass('d-none');
       $('.v-series-js').removeClass('d-block');
       $('.' + statutGenres).addClass('d-block');
@@ -259,7 +259,7 @@ $('.btn_section_s').click(function() {
       statutGenres = "Action";
       triGenreDowns(statutGenres);
     } else if (btnArrays[($(this).val()) - 1] === "Policiers") {
-      statutGenre = "Policiers";
+      statutGenres = "Policiers";
       triGenreDowns(statutGenres);
     } else if (btnArrays[($(this).val()) - 1] === "Comedie") {
       statutGenres = "Comedie";
