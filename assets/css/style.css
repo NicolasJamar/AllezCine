@@ -142,6 +142,9 @@ nav.navbar{
 
 .carousel-caption a{
 	font-size: 0.7rem;
+	background-color: #fe4240;
+	color: white;
+	text-decoration: none;
 }
 
 .carousel-indicators{
@@ -239,7 +242,7 @@ main h2{
 /*SECTION MAIN*/
 
 
-.btn_section ,.btn_section_s {
+.btn_section ,.btn_sections {
 	width: 95px;
 	height: 34px;
 	margin: 15px 0px 0px 2px;
@@ -247,7 +250,7 @@ main h2{
 	cursor: pointer;
 }
 
-.btn_section:hover, .btn_section_s:hover {
+.btn_section:hover, .btn_sections:hover {
 	background-color: #FE4240;
 	color: white;
 }
@@ -722,4 +725,12 @@ color: #a4a4a4;
   right: 30px;
   z-index: 999;
   padding: 15px;
+}
+
+#trailerModal{
+	height: 80vh;
+}
+
+#trailerModal .modal-body{
+	height: 45vh;
 }
