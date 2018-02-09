@@ -153,6 +153,9 @@ nav.navbar{
 
 .carousel-caption a{
 	font-size: 0.7rem;
+	background-color: #FE4240;
+	text-decoration-style: none;
+	color: white;
 }
 
 .carousel-indicators{
@@ -244,7 +247,7 @@ main h2{
 /*SECTION MAIN*/
 
 
-.btn_section {
+.btn_section, .btn_sections {
 	width: 95px;
 	height: 34px;
 	margin: 15px 0px 0px 2px;
@@ -252,7 +255,7 @@ main h2{
 	cursor: pointer;
 }
 
-.btn_section:hover {
+.btn_section:hover, .btn_sections:hover {
 	background-color: #FE4240;
 	color: white;
 }
