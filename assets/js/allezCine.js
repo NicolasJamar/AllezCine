@@ -315,11 +315,11 @@ $('.btn_sections').click(function(event) {
 $('#watch-trailer-js').click(function(event){
   var indic = $('.carousel-indicators').children('.active').attr('data-slide-to');
   $('#my-iframe-js').attr('src',bottomCarTrailer[indic]);
-  $('#trailerModal').toggle();
+  $('#trailerModal').show();
 });
 
 $('.car-trailer-js').click(function(event){
-  $('#trailerModal').toggle();
+  $('#trailerModal').show();
   var ert = ($(this).val())-1;
   $('#my-iframe-js').attr('src',bottomCarTrailer[ert]);
 });
