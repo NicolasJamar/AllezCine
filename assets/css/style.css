@@ -310,7 +310,6 @@ main h2{
 	margin-bottom: 1rem;
 }
 
-
 .vignettes{
 	padding : 0.3rem;
 }
@@ -403,7 +402,6 @@ main h2{
 	color :#fff ;
 	border: none;
 }
-
 
 
 /*BTN PLUS/MOINS FILM*/
@@ -542,12 +540,10 @@ footer {
 }
 
 .flex1 {
+	padding: 0 -50px;
+	margin: 0;
     display: flex;
-}
-
-.colonnes {
- 	 /*width: 20%;*/
-     padding: 10px;
+    justify-content: center;
 }
 
 .colonne1 {
@@ -564,7 +560,6 @@ footer {
 }
 
 .form-subscribe{
-
 	width: 300px;
 	height: 30px;
 	padding: 2px;
@@ -618,9 +613,8 @@ footer {
 
 .footBadge {
 	background-color: #292929;
-	margin-right: -1px;
-	margin-bottom: 1px;
-	padding: 2px;
+	margin-bottom: 6px;
+	padding: 5px;
 	font-family: arial;
 	font-size: 10px;
 	font-weight: bold;
@@ -634,17 +628,14 @@ footer {
 }
 
 .footLatestImg {
-    width: 40%;
-    height: auto;
+    width: 8vw;
     vertical-align: middle;
-    float:right;
     margin-right: 5px;
-    margin-bottom: -10px;
+    margin-bottom: 5px;
 }
 
 .footLogo {
-	margin-top: 10px;
-	margin-bottom: 12px;
+	margin-bottom: 8px;
 	font-family: arial;
 	font-size: 18px;
 	font-weight: bold;
@@ -671,6 +662,10 @@ footer {
 	border-radius: 2px;
 	text-align: center;
 	color: #a4a4a4;
+}
+
+.width-Lastest-Movies{
+	width: 25vw !important;
 }
 
 .fa, .fa a {
@@ -724,6 +719,34 @@ footer {
 	.navbar-toggler{
 		margin-right: 2rem;
 	}
+
+	.container-footer{
+		margin: 0;
+	}
+
+	.footTitre{
+		margin-bottom: 0.2rem;
+		margin-top: 0.7rem;
+	}
+
+	.footLigne{
+		margin-top: 0.2rem;
+	}
+
+	.footTexte{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.footTexte p{
+		margin: 0 1rem;
+	}
+
+	.footBadge{
+		margin: 0.2rem;
+	}
+
 }
 
 @media only screen and (max-width: 540px){
@@ -736,14 +759,5 @@ footer {
 		flex-direction: column;
 	}
 
-	.footTexte{
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-	}
-
-	.footTexte p{
-		margin: 0 1rem;
-	}
 }
 
